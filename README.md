@@ -1,3 +1,4 @@
+[![Build](https://github.com/Madhunc5229/autonomous-warehouse-inspection/actions/workflows/cmake.yml/badge.svg?branch=development_phase1)](https://github.com/Madhunc5229/autonomous-warehouse-inspection/actions/workflows/cmake.yml)
 # autonomous-warehouse-inspection  
 ## Authors
 Sprint 1 -
