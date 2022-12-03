@@ -50,6 +50,9 @@ jobs:
       - name: Run Test Coverage
         working-directory: ${{github.workspace}}/build
         run: make code_coverage
+        
+      - name: testing lcov
+        run: ls
       
       # Upload coverage result to Coverage.io 
       - name: Upload result to Coveralls.io
