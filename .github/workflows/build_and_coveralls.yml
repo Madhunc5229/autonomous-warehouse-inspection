@@ -52,7 +52,7 @@ jobs:
         run: make code_coverage
         
       - name: testing lcov
-        run: ls
+        run: ls ${{github.workspace}}/build
       
       # Upload coverage result to Coverage.io 
       - name: Upload result to Coveralls.io
