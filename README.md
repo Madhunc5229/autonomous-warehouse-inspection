@@ -1,5 +1,6 @@
 [![Build](https://github.com/Madhunc5229/autonomous-warehouse-inspection/actions/workflows/build_and_coveralls.yml/badge.svg)](https://github.com/Madhunc5229/autonomous-warehouse-inspection/actions/workflows/build_and_coveralls.yml)
 [![Coverage Status](https://coveralls.io/repos/github/Madhunc5229/autonomous-warehouse-inspection/badge.svg?branch=main)](https://coveralls.io/github/Madhunc5229/autonomous-warehouse-inspection?branch=main)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # autonomous-warehouse-inspection  
 ## Authors
 Sprint 1 -
