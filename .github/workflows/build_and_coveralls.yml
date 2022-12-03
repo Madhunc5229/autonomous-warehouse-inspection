@@ -48,7 +48,7 @@ jobs:
 
       # Run test suite and compute code coverage
       - name: Run Test Coverage
-        working-directory: ${{github.workspace}}/build
+        working-directory: ${{github.workspace}}/build/coverage
         run: make code_coverage
         
       - name: testing lcov
