@@ -17,24 +17,31 @@ Sprint 3 -
 
  ## Requirements
  - C++ 14++
- - Cmake min 3.2.1  
- - Opencv [For installation](http://www.codebind.com/linux-tutorials/how-to-install-opencv-in-ubuntu-20-04-lts-for-c-c/
+ - Cmake min 3.8 
  - ROS 2 Humble
  
- ## Build and Running Instructions
- ```
-    git clone https://github.com/Madhunc5229/autonomous-warehouse-inspection.git
-    mkdir build && cd build
-    cmake .. 
-    make
+## Building the package
 
-    <!-- Run app -->
-    ./app/myApp
+### source the ROS2 setup bash.
+```
+source /opt/ros/humble/setup.bash
+```
+### Clone the repository
+```
+cd <ros2 workspace folder>/src
+git clone https://github.com/Madhunc5229/autonomous-warehouse-inspection.git
+```
+### Build the package using colcon
+```
+cd ..
+colcon build --packages-select autonomous-warehouse-inspection
+```
 
-    <!-- Run tests -->
-    ./test/cpp-test
-    
- ```
+### Source the package after building
+```
+source install/setup.bash
+```
+
  #### The Quad Chart for the project can be found [here](assets/quad_chart.pdf)
 
  #### The Proposal for the project can be found [here](assets/Proposal.pdf)
