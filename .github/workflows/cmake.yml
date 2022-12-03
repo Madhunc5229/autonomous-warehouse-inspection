@@ -36,6 +36,9 @@ jobs:
       # Install some system pacakges
       - name: Install packages
         run: pip3 install --user cpp-coveralls
+        
+      - name: Install Lcov
+        run: sudo apt-get install -y -qq lcov
 
       # Run CMake to setup compilation flags
       - name: Configure Coverage CMake 
