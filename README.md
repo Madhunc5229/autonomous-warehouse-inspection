@@ -35,3 +35,10 @@ Sprint 3 -
     ./test/cpp-test
     
  ```
+ #### The Quad Chart for the project can be found [here](assets/quad_chart.pdf)
+
+ #### The Proposal for the project can be found [here](assets/Proposal.pdf)
+ 
+ #### The Spring planning notes can be found [here](https://docs.google.com/document/d/1qIElu25JZNJVtyW8FD5T3SJKS2kH1nsZAEqA6rTz8Hw)
+ 
+ #### The Blacklog sheets for the Sprint can be found [here](https://docs.google.com/spreadsheets/d/1X7CdlP6GfEIelaqToiiKs4L1Nf4WaPwW27uZhFS1iec/edit#gid=0)
