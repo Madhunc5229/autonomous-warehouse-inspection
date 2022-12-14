@@ -14,13 +14,13 @@ def generate_launch_description():
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
     # nav2_tb3 = get_package_share_directory('turtlebot3_navigation2')
     nav2_tb3 = get_package_share_directory('nav2_bringup')
-    map_dir = os.path.join(get_package_share_directory('test_project'), 'maps','map_mini.yaml')
+    map_dir = os.path.join(get_package_share_directory('autonomous-warehouse-inspection'), 'maps','map_mini.yaml')
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
     x_pose = LaunchConfiguration('x_pose', default='0.0')
     y_pose = LaunchConfiguration('y_pose', default='0.0')
     aruco_id = LaunchConfiguration('aruco_id')
     world = os.path.join(
-        get_package_share_directory('test_project'),
+        get_package_share_directory('autonomous-warehouse-inspection'),
         'worlds',
         'warehouse_mini.world'
     )
@@ -85,7 +85,8 @@ def generate_launch_description():
     ld.add_action(spawn_turtlebot_cmd)
     ld.add_action(nav_launch)
     ld.add_action(initial_pose_pub)
-
+    ld.add_action(declare_aruco_cmd)
+    ld.add_action(start_aruco_detection_node_cmd)
 
     return ld
 
