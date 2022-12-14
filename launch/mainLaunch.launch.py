@@ -25,10 +25,10 @@ def generate_launch_description():
         'warehouse_mini.world'
     )
 
-    declare_aruco_cmd = DeclareLaunchArgument(
-        'aruco_id',
-        default_value='0',
-        description='ID for the aruco fiducial marker')
+    # declare_aruco_cmd = DeclareLaunchArgument(
+    #     'aruco_id',
+    #     default_value='0',
+    #     description='ID for the aruco fiducial marker')
 
     start_aruco_detection_node_cmd = Node(
         package='ros2_aruco',
@@ -85,8 +85,8 @@ def generate_launch_description():
     ld.add_action(spawn_turtlebot_cmd)
     ld.add_action(nav_launch)
     ld.add_action(initial_pose_pub)
-    ld.add_action(declare_aruco_cmd)
-    ld.add_action(start_aruco_detection_node_cmd)
+    # ld.add_action(declare_aruco_cmd)
+    # ld.add_action(start_aruco_detection_node_cmd)
 
     return ld
 
