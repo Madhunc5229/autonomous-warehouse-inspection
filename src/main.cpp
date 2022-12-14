@@ -7,6 +7,8 @@ int main(int argc, char * argv[]){
     // Beacon beacon;
 
     inspector.moveToLocation();
+    // std::cout<<"dne"<<"/n";
+    inspector.rotateInspector();
     inspector.resumeInspection();
 
     rclcpp::shutdown();
