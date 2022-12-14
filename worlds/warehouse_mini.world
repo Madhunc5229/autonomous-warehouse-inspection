@@ -491,10 +491,10 @@
       </link>
     </model>
     <state world_name='default'>
-      <sim_time>241 260000000</sim_time>
-      <real_time>206 497555283</real_time>
-      <wall_time>1671002379 689217646</wall_time>
-      <iterations>147987</iterations>
+      <sim_time>268 798000000</sim_time>
+      <real_time>27 648353150</real_time>
+      <wall_time>1671050590 218059209</wall_time>
+      <iterations>27538</iterations>
       <model name='Koundinya_trial_1'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -524,11 +524,21 @@
         </link>
       </model>
       <model name='aruco_marker_0'>
-        <pose>-3.92333 -1.34559 0.328237 -1e-06 -0.003503 -0</pose>
+        <pose>-3.92344 -1.34559 0.603617 -1e-06 -0.005128 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-3.92333 -1.34559 0.328237 -1e-06 -0.003503 -0</pose>
+          <pose>-3.92344 -1.34559 0.603617 -1e-06 -0.005128 0</pose>
           <velocity>-4e-06 0 0.01 0 -5.9e-05 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='aruco_marker_0_0'>
+        <pose>0.00711 -1.92724 0.278967 -0.019768 -0.000796 1.53057</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0.00711 -1.92724 0.278967 -0.019768 -0.000796 1.53057</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
@@ -544,40 +554,40 @@
         </link>
       </model>
       <model name='unit_box'>
-        <pose>-0.239173 -2.34219 0.499995 0 -1e-05 0</pose>
+        <pose>-0.016915 -2.45145 0.499995 1e-05 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.239173 -2.34219 0.499995 0 -1e-05 0</pose>
+          <pose>-0.016915 -2.45145 0.499995 1e-05 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.010615 -0.006191 -9.78231 0.012424 -0.021225 -1.8e-05</acceleration>
-          <wrench>-0.010615 -0.006191 -9.78231 0 -0 0</wrench>
+          <acceleration>0.004709 -0.011055 -9.78158 0.022108 0.009414 -1e-06</acceleration>
+          <wrench>0.004709 -0.011055 -9.78158 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_0'>
-        <pose>2.9405 -0.038475 0.499995 1e-05 -0 0</pose>
+        <pose>2.9405 -0.03847 0.499995 0 1e-05 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>2.9405 -0.038475 0.499995 1e-05 -0 0</pose>
+          <pose>2.9405 -0.03847 0.499995 0 1e-05 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.004709 -0.011055 -9.78158 0.022108 -0.009414 1e-06</acceleration>
-          <wrench>-0.004709 -0.011055 -9.78158 0 -0 0</wrench>
+          <acceleration>0.010615 0.006191 -9.78231 -0.012424 0.021225 -1.8e-05</acceleration>
+          <wrench>0.010615 0.006191 -9.78231 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_cylinder'>
-        <pose>0.23048 1.75966 0.499998 3e-06 -3e-06 0</pose>
+        <pose>0.230483 1.75966 0.499992 -3e-06 3e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.23048 1.75966 0.499998 3e-06 -3e-06 0</pose>
+          <pose>0.230483 1.75966 0.499992 -3e-06 3e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_cylinder_0'>
-        <pose>-2.18952 -0.182543 0.499992 -3e-06 -4e-06 -0</pose>
+        <pose>-2.18952 -0.182546 0.499998 3e-06 4e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-2.18952 -0.182543 0.499992 -3e-06 -4e-06 -0</pose>
+          <pose>-2.18952 -0.182546 0.499998 3e-06 4e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
@@ -589,7 +599,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>5.8769 3.49342 31.6129 2e-06 1.5698 2.94813</pose>
+        <pose>4.1937 -1.1547 1.76274 0 0.217797 -2.95106</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -659,6 +669,72 @@
         <kinematic>0</kinematic>
       </link>
       <pose>-3.14826 -1.34559 0 0 -0 0</pose>
+    </model>
+    <model name='aruco_marker_0_0'>
+      <static>0</static>
+      <link name='link'>
+        <gravity>0</gravity>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 0.15 0.15</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://aruco_marker_0/materials/scripts</uri>
+              <uri>model://aruco_marker_0/materials/textures</uri>
+              <name>aruco_marker_0</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 0.15 0.15</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 0.15 0.15</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-2.76642 -2.44124 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
