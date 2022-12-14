@@ -85,8 +85,7 @@ def generate_launch_description():
     ld.add_action(spawn_turtlebot_cmd)
     ld.add_action(nav_launch)
     ld.add_action(initial_pose_pub)
-    # ld.add_action(declare_aruco_cmd)
-    # ld.add_action(start_aruco_detection_node_cmd)
+
 
     return ld
 
