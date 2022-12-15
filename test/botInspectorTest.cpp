@@ -1,11 +1,8 @@
 #include <gtest/gtest.h>
 #include <stdlib.h>
 #include "rclcpp/rclcpp.hpp"
-
-
-
 #include "../include/botInspector.hpp"
-
+#include "std_msgs/msg/string.hpp"
 class TaskNavigation : public testing::Test {
  protected:
   rclcpp::Node::SharedPtr node_;
