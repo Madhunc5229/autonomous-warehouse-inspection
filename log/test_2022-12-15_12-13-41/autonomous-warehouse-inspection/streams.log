@@ -1,0 +1,50 @@
+[0.157s] Invoking command in '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection': AMENT_PREFIX_PATH=/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection /usr/bin/ctest -C Debug -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.161s] UpdateCTestConfiguration  from :/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/CTestConfiguration.ini
+[0.161s] Parse Config file:/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/CTestConfiguration.ini
+[0.162s]    Site: Legion5i
+[0.162s]    Build name: (empty)
+[0.162s]  Add coverage exclude regular expressions.
+[0.162s] Create new tag: 20221215-1713 - Experimental
+[0.162s] UpdateCTestConfiguration  from :/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/CTestConfiguration.ini
+[0.162s] Parse Config file:/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/CTestConfiguration.ini
+[0.163s] Test project /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection
+[0.163s] Constructing a list of tests
+[0.163s] Done constructing a list of tests
+[0.163s] Updating test list for fixtures
+[0.163s] Added 0 tests to meet fixture requirements
+[0.163s] Checking test dependency graph...
+[0.163s] Checking test dependency graph end
+[0.163s] test 1
+[0.163s]     Start 1: autonomous-warehouse-inspection_test
+[0.164s] 
+[0.164s] 1: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/test_results/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test.gtest.xml" "--package-name" "autonomous-warehouse-inspection" "--output-file" "/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/ament_cmake_gtest/autonomous-warehouse-inspection_test.txt" "--command" "/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test" "--gtest_output=xml:/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/test_results/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test.gtest.xml"
+[0.164s] 1: Test timeout computed to be: 60
+[0.210s] 1: -- run_test.py: invoking following command in '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection':
+[0.210s] 1:  - /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test --gtest_output=xml:/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/test_results/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test.gtest.xml
+[0.221s] 1: [==========] Running 2 tests from 2 test suites.
+[0.221s] 1: [----------] Global test environment set-up.
+[0.221s] 1: [----------] 1 test from TaskPlanningFixture
+[0.221s] 1: [ RUN      ] TaskPlanningFixture.goalPoseCheck
+[0.222s] 1: [       OK ] TaskPlanningFixture.goalPoseCheck (0 ms)
+[0.222s] 1: [----------] 1 test from TaskPlanningFixture (0 ms total)
+[0.222s] 1: 
+[0.222s] 1: [----------] 1 test from TaskInspection
+[0.222s] 1: [ RUN      ] TaskInspection.test_for_num_publishers
+[0.233s] 1: [       OK ] TaskInspection.test_for_num_publishers (11 ms)
+[0.233s] 1: [----------] 1 test from TaskInspection (11 ms total)
+[0.233s] 1: 
+[0.233s] 1: [----------] Global test environment tear-down
+[0.234s] 1: [==========] 2 tests from 2 test suites ran. (11 ms total)
+[0.234s] 1: [  PASSED  ] 2 tests.
+[0.338s] 1: -- run_test.py: return code 0
+[0.339s] 1: -- run_test.py: inject classname prefix into gtest result file '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/test_results/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test.gtest.xml'
+[0.340s] 1: -- run_test.py: verify result file '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/test_results/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test.gtest.xml'
+[0.350s] 1/1 Test #1: autonomous-warehouse-inspection_test ...   Passed    0.19 sec
+[0.350s] 
+[0.350s] [0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 1
+[0.350s] 
+[0.350s] Label Time Summary:
+[0.350s] gtest    =   0.19 sec*proc (1 test)
+[0.350s] 
+[0.351s] Total Test time (real) =   0.19 sec
+[0.354s] Invoked command in '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection' returned '0': AMENT_PREFIX_PATH=/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection /usr/bin/ctest -C Debug -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

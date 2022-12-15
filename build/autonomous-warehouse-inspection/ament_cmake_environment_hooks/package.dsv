@@ -1,0 +1,4 @@
+source;share/autonomous-warehouse-inspection/local_setup.bash
+source;share/autonomous-warehouse-inspection/local_setup.dsv
+source;share/autonomous-warehouse-inspection/local_setup.sh
+source;share/autonomous-warehouse-inspection/local_setup.zsh

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20221215-1701-Experimental"
+	Name="Legion5i"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.3.0"
+	OSName="Linux"
+	Hostname="Legion5i"
+	OSRelease="5.15.79.1-microsoft-standard-WSL2"
+	OSVersion="#1 SMP Wed Nov 23 01:01:46 UTC 2022"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="141"
+	ProcessorCacheSize="24576"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="2048"
+	TotalPhysicalMemory="7834"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2304"
+	>
+	<Testing>
+		<StartDateTime>Dec 15 12:01 EST</StartDateTime>
+		<StartTestTime>1671123717</StartTestTime>
+		<TestList>
+			<Test>./autonomous-warehouse-inspection_test</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>autonomous-warehouse-inspection_test</Name>
+			<Path>.</Path>
+			<FullName>./autonomous-warehouse-inspection_test</FullName>
+			<FullCommandLine>/usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/test_results/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test.gtest.xml" "--package-name" "autonomous-warehouse-inspection" "--output-file" "/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/ament_cmake_gtest/autonomous-warehouse-inspection_test.txt" "--command" "/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test" "--gtest_output=xml:/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/test_results/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test.gtest.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.231902</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/test_results/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test.gtest.xml" "--package-name" "autonomous-warehouse-inspection" "--output-file" "/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/ament_cmake_gtest/autonomous-warehouse-inspection_test.txt" "--command" "/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test" "--gtest_output=xml:/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/test_results/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection':
+ - /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test --gtest_output=xml:/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/test_results/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test.gtest.xml
+[==========] Running 2 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from TaskPlanningFixture
+[ RUN      ] TaskPlanningFixture.goalPoseCheck
+[       OK ] TaskPlanningFixture.goalPoseCheck (0 ms)
+[----------] 1 test from TaskPlanningFixture (0 ms total)
+
+[----------] 1 test from TaskInspection
+[ RUN      ] TaskInspection.test_for_num_publishers
+[       OK ] TaskInspection.test_for_num_publishers (34 ms)
+[----------] 1 test from TaskInspection (34 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 2 test suites ran. (34 ms total)
+[  PASSED  ] 2 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/test_results/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test.gtest.xml'
+-- run_test.py: verify result file '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection/test_results/autonomous-warehouse-inspection/autonomous-warehouse-inspection_test.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>Dec 15 12:01 EST</EndDateTime>
+		<EndTestTime>1671123717</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

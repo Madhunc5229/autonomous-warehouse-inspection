@@ -1,0 +1,40 @@
+[35m[1mConsolidate compiler generated dependencies of target aruco_detect[0m
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[35m[1mConsolidate compiler generated dependencies of target inspection[0m
+[ 15%] Built target gtest_main
+[ 30%] Built target gtest
+[ 46%] Built target aruco_detect
+[ 69%] Built target inspection
+[35m[1mConsolidate compiler generated dependencies of target autonomous-warehouse-inspection_test[0m
+[100%] Built target autonomous-warehouse-inspection_test
+-- Install configuration: "Debug"
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/lib/autonomous-warehouse-inspection/inspection
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/lib/autonomous-warehouse-inspection/aruco_detect
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/launch
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/launch/mainLaunch.launch.py
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/launch/aruco_launch.py
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/worlds
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/worlds/warehouse_layout_1
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/worlds/warehouse_mini.world
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/worlds/warehouse_layout_1:Zone.Identifier
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/worlds/no_roof_small_warehouse.world
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/maps
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/maps/map_mini.pgm
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/maps/map_mini.yaml
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/ament_index/resource_index/package_run_dependencies/autonomous-warehouse-inspection
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/ament_index/resource_index/parent_prefix_path/autonomous-warehouse-inspection
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/environment/ament_prefix_path.sh
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/environment/path.sh
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/environment/path.dsv
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/local_setup.bash
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/local_setup.sh
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/local_setup.zsh
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/local_setup.dsv
+-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/package.dsv
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/ament_index/resource_index/packages/autonomous-warehouse-inspection
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/cmake/autonomous-warehouse-inspectionConfig.cmake
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/cmake/autonomous-warehouse-inspectionConfig-version.cmake
+-- Up-to-date: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/package.xml

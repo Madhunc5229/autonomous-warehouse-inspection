@@ -1,0 +1,1634 @@
+[0.000000] (-) TimerEvent: {}
+[0.000825] (autonomous-warehouse-inspection) JobQueued: {'identifier': 'autonomous-warehouse-inspection', 'dependencies': OrderedDict()}
+[0.001550] (autonomous-warehouse-inspection) JobStarted: {'identifier': 'autonomous-warehouse-inspection'}
+[0.010749] (autonomous-warehouse-inspection) JobProgress: {'identifier': 'autonomous-warehouse-inspection', 'progress': 'cmake'}
+[0.010936] (autonomous-warehouse-inspection) Command: {'cmd': ['/usr/bin/cmake', '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_CXX_FLAGS=--coverage', '-DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON', '-DARG_CONFIG_FILE=uncrustify_google_cpp_allman.cfg', '-DCMAKE_INSTALL_PREFIX=/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection'], 'cwd': '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mnc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{f9ceaf27-504c-58d7-927c-d1d6a7ac7d3c}'), ('HOME', '/home/mnc'), ('OLDPWD', '/home/mnc/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mnc'), ('NAME', 'Legion5i'), ('WSL_INTEROP', '/run/WSL/7431_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models/:/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2021b/runtime/win64:/mnt/c/Program Files/MATLAB/R2021b/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/PuTTY/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/c/opencv/x64/vc16/bin:/mnt/c/ProgramData/chocolatey/lib/cunit/lib:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ProgramData/chocolatey/lib/bullet/lib:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Program Files/Cppcheck:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/madhu/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2021.3/bin:/mnt/c/Users/madhu/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/xmllint/bin:/snap/bin'), ('WT_SESSION', '2fe46ffa-74fc-43d2-9630-000053f758e2'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION::WT_PROFILE_ID'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099355] (-) TimerEvent: {}
+[0.199948] (-) TimerEvent: {}
+[0.300729] (-) TimerEvent: {}
+[0.373587] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.400833] (-) TimerEvent: {}
+[0.501651] (-) TimerEvent: {}
+[0.603024] (-) TimerEvent: {}
+[0.703822] (-) TimerEvent: {}
+[0.804813] (-) TimerEvent: {}
+[0.905562] (-) TimerEvent: {}
+[1.006196] (-) TimerEvent: {}
+[1.106929] (-) TimerEvent: {}
+[1.208192] (-) TimerEvent: {}
+[1.308896] (-) TimerEvent: {}
+[1.409560] (-) TimerEvent: {}
+[1.510325] (-) TimerEvent: {}
+[1.610921] (-) TimerEvent: {}
+[1.711761] (-) TimerEvent: {}
+[1.812141] (-) TimerEvent: {}
+[1.912596] (-) TimerEvent: {}
+[2.013059] (-) TimerEvent: {}
+[2.038491] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[2.113292] (-) TimerEvent: {}
+[2.213913] (-) TimerEvent: {}
+[2.314501] (-) TimerEvent: {}
+[2.415339] (-) TimerEvent: {}
+[2.516068] (-) TimerEvent: {}
+[2.617116] (-) TimerEvent: {}
+[2.718400] (-) TimerEvent: {}
+[2.819156] (-) TimerEvent: {}
+[2.919925] (-) TimerEvent: {}
+[3.020500] (-) TimerEvent: {}
+[3.121029] (-) TimerEvent: {}
+[3.221693] (-) TimerEvent: {}
+[3.322410] (-) TimerEvent: {}
+[3.423027] (-) TimerEvent: {}
+[3.442641] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.523237] (-) TimerEvent: {}
+[3.623790] (-) TimerEvent: {}
+[3.724511] (-) TimerEvent: {}
+[3.799536] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.805074] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.805370] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.805767] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.807968] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.824627] (-) TimerEvent: {}
+[3.925211] (-) TimerEvent: {}
+[4.026519] (-) TimerEvent: {}
+[4.127279] (-) TimerEvent: {}
+[4.198498] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.203979] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.204350] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.204536] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.208391] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.227418] (-) TimerEvent: {}
+[4.327845] (-) TimerEvent: {}
+[4.356804] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[4.428111] (-) TimerEvent: {}
+[4.445436] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 1.0.3 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)\n'}
+[4.446547] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.528297] (-) TimerEvent: {}
+[4.629133] (-) TimerEvent: {}
+[4.730167] (-) TimerEvent: {}
+[4.830901] (-) TimerEvent: {}
+[4.931694] (-) TimerEvent: {}
+[4.998612] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") \n'}
+[5.031939] (-) TimerEvent: {}
+[5.132814] (-) TimerEvent: {}
+[5.234549] (-) TimerEvent: {}
+[5.335159] (-) TimerEvent: {}
+[5.436215] (-) TimerEvent: {}
+[5.537220] (-) TimerEvent: {}
+[5.637801] (-) TimerEvent: {}
+[5.738461] (-) TimerEvent: {}
+[5.839245] (-) TimerEvent: {}
+[5.939914] (-) TimerEvent: {}
+[6.040465] (-) TimerEvent: {}
+[6.141106] (-) TimerEvent: {}
+[6.241685] (-) TimerEvent: {}
+[6.342202] (-) TimerEvent: {}
+[6.442855] (-) TimerEvent: {}
+[6.543697] (-) TimerEvent: {}
+[6.644821] (-) TimerEvent: {}
+[6.745308] (-) TimerEvent: {}
+[6.764438] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") \n'}
+[6.764786] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.764869] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[6.764935] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[6.780738] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[6.782323] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.2 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[6.784467] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found rclcpp: 16.0.1 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[6.845499] (-) TimerEvent: {}
+[6.946099] (-) TimerEvent: {}
+[6.999766] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.3 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.003414] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.011658] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.3 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[7.024846] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.040450] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.046310] (-) TimerEvent: {}
+[7.096929] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.0 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[7.098845] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.1 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.146602] (-) TimerEvent: {}
+[7.247398] (-) TimerEvent: {}
+[7.348447] (-) TimerEvent: {}
+[7.450603] (-) TimerEvent: {}
+[7.551925] (-) TimerEvent: {}
+[7.652683] (-) TimerEvent: {}
+[7.754586] (-) TimerEvent: {}
+[7.855528] (-) TimerEvent: {}
+[7.956912] (-) TimerEvent: {}
+[8.057826] (-) TimerEvent: {}
+[8.159024] (-) TimerEvent: {}
+[8.259627] (-) TimerEvent: {}
+[8.360283] (-) TimerEvent: {}
+[8.460973] (-) TimerEvent: {}
+[8.561734] (-) TimerEvent: {}
+[8.662470] (-) TimerEvent: {}
+[8.763693] (-) TimerEvent: {}
+[8.864949] (-) TimerEvent: {}
+[8.966329] (-) TimerEvent: {}
+[9.066762] (-) TimerEvent: {}
+[9.167210] (-) TimerEvent: {}
+[9.267965] (-) TimerEvent: {}
+[9.368635] (-) TimerEvent: {}
+[9.469842] (-) TimerEvent: {}
+[9.570407] (-) TimerEvent: {}
+[9.671310] (-) TimerEvent: {}
+[9.771924] (-) TimerEvent: {}
+[9.872846] (-) TimerEvent: {}
+[9.973849] (-) TimerEvent: {}
+[10.075092] (-) TimerEvent: {}
+[10.176018] (-) TimerEvent: {}
+[10.277333] (-) TimerEvent: {}
+[10.378394] (-) TimerEvent: {}
+[10.479419] (-) TimerEvent: {}
+[10.580676] (-) TimerEvent: {}
+[10.682299] (-) TimerEvent: {}
+[10.783356] (-) TimerEvent: {}
+[10.884480] (-) TimerEvent: {}
+[10.984960] (-) TimerEvent: {}
+[11.085603] (-) TimerEvent: {}
+[11.186061] (-) TimerEvent: {}
+[11.286494] (-) TimerEvent: {}
+[11.387183] (-) TimerEvent: {}
+[11.487862] (-) TimerEvent: {}
+[11.588536] (-) TimerEvent: {}
+[11.689633] (-) TimerEvent: {}
+[11.714488] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[11.789731] (-) TimerEvent: {}
+[11.890253] (-) TimerEvent: {}
+[11.990989] (-) TimerEvent: {}
+[12.091661] (-) TimerEvent: {}
+[12.192771] (-) TimerEvent: {}
+[12.293507] (-) TimerEvent: {}
+[12.395223] (-) TimerEvent: {}
+[12.496121] (-) TimerEvent: {}
+[12.597328] (-) TimerEvent: {}
+[12.698349] (-) TimerEvent: {}
+[12.799297] (-) TimerEvent: {}
+[12.899914] (-) TimerEvent: {}
+[13.000349] (-) TimerEvent: {}
+[13.101171] (-) TimerEvent: {}
+[13.202116] (-) TimerEvent: {}
+[13.302757] (-) TimerEvent: {}
+[13.403326] (-) TimerEvent: {}
+[13.504288] (-) TimerEvent: {}
+[13.605241] (-) TimerEvent: {}
+[13.705859] (-) TimerEvent: {}
+[13.806465] (-) TimerEvent: {}
+[13.907034] (-) TimerEvent: {}
+[14.008028] (-) TimerEvent: {}
+[14.108616] (-) TimerEvent: {}
+[14.209137] (-) TimerEvent: {}
+[14.309589] (-) TimerEvent: {}
+[14.410079] (-) TimerEvent: {}
+[14.510536] (-) TimerEvent: {}
+[14.611020] (-) TimerEvent: {}
+[14.711548] (-) TimerEvent: {}
+[14.812056] (-) TimerEvent: {}
+[14.912869] (-) TimerEvent: {}
+[15.013333] (-) TimerEvent: {}
+[15.113884] (-) TimerEvent: {}
+[15.214307] (-) TimerEvent: {}
+[15.314803] (-) TimerEvent: {}
+[15.415350] (-) TimerEvent: {}
+[15.516385] (-) TimerEvent: {}
+[15.617131] (-) TimerEvent: {}
+[15.717630] (-) TimerEvent: {}
+[15.818256] (-) TimerEvent: {}
+[15.918808] (-) TimerEvent: {}
+[16.019321] (-) TimerEvent: {}
+[16.119969] (-) TimerEvent: {}
+[16.221010] (-) TimerEvent: {}
+[16.321693] (-) TimerEvent: {}
+[16.422642] (-) TimerEvent: {}
+[16.523724] (-) TimerEvent: {}
+[16.624294] (-) TimerEvent: {}
+[16.725590] (-) TimerEvent: {}
+[16.802928] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[16.826702] (-) TimerEvent: {}
+[16.927532] (-) TimerEvent: {}
+[17.028282] (-) TimerEvent: {}
+[17.128944] (-) TimerEvent: {}
+[17.229671] (-) TimerEvent: {}
+[17.330455] (-) TimerEvent: {}
+[17.430879] (-) TimerEvent: {}
+[17.531414] (-) TimerEvent: {}
+[17.631967] (-) TimerEvent: {}
+[17.732466] (-) TimerEvent: {}
+[17.832968] (-) TimerEvent: {}
+[17.933585] (-) TimerEvent: {}
+[18.034283] (-) TimerEvent: {}
+[18.134884] (-) TimerEvent: {}
+[18.235574] (-) TimerEvent: {}
+[18.336056] (-) TimerEvent: {}
+[18.436692] (-) TimerEvent: {}
+[18.537178] (-) TimerEvent: {}
+[18.637722] (-) TimerEvent: {}
+[18.738270] (-) TimerEvent: {}
+[18.838910] (-) TimerEvent: {}
+[18.939562] (-) TimerEvent: {}
+[19.040507] (-) TimerEvent: {}
+[19.141398] (-) TimerEvent: {}
+[19.241963] (-) TimerEvent: {}
+[19.342485] (-) TimerEvent: {}
+[19.442959] (-) TimerEvent: {}
+[19.543474] (-) TimerEvent: {}
+[19.643961] (-) TimerEvent: {}
+[19.744392] (-) TimerEvent: {}
+[19.844874] (-) TimerEvent: {}
+[19.945443] (-) TimerEvent: {}
+[20.045913] (-) TimerEvent: {}
+[20.146403] (-) TimerEvent: {}
+[20.246926] (-) TimerEvent: {}
+[20.347447] (-) TimerEvent: {}
+[20.448261] (-) TimerEvent: {}
+[20.548818] (-) TimerEvent: {}
+[20.649425] (-) TimerEvent: {}
+[20.750455] (-) TimerEvent: {}
+[20.851484] (-) TimerEvent: {}
+[20.952565] (-) TimerEvent: {}
+[21.053464] (-) TimerEvent: {}
+[21.154270] (-) TimerEvent: {}
+[21.254874] (-) TimerEvent: {}
+[21.355713] (-) TimerEvent: {}
+[21.456241] (-) TimerEvent: {}
+[21.556924] (-) TimerEvent: {}
+[21.657362] (-) TimerEvent: {}
+[21.757862] (-) TimerEvent: {}
+[21.858839] (-) TimerEvent: {}
+[21.959712] (-) TimerEvent: {}
+[22.060341] (-) TimerEvent: {}
+[22.161105] (-) TimerEvent: {}
+[22.261664] (-) TimerEvent: {}
+[22.362367] (-) TimerEvent: {}
+[22.462975] (-) TimerEvent: {}
+[22.563405] (-) TimerEvent: {}
+[22.663894] (-) TimerEvent: {}
+[22.764411] (-) TimerEvent: {}
+[22.864850] (-) TimerEvent: {}
+[22.965280] (-) TimerEvent: {}
+[23.065713] (-) TimerEvent: {}
+[23.166250] (-) TimerEvent: {}
+[23.266722] (-) TimerEvent: {}
+[23.367349] (-) TimerEvent: {}
+[23.468131] (-) TimerEvent: {}
+[23.568946] (-) TimerEvent: {}
+[23.669516] (-) TimerEvent: {}
+[23.769972] (-) TimerEvent: {}
+[23.870398] (-) TimerEvent: {}
+[23.970870] (-) TimerEvent: {}
+[24.071415] (-) TimerEvent: {}
+[24.172103] (-) TimerEvent: {}
+[24.272808] (-) TimerEvent: {}
+[24.373252] (-) TimerEvent: {}
+[24.473673] (-) TimerEvent: {}
+[24.574196] (-) TimerEvent: {}
+[24.674678] (-) TimerEvent: {}
+[24.775194] (-) TimerEvent: {}
+[24.875843] (-) TimerEvent: {}
+[24.976693] (-) TimerEvent: {}
+[25.077256] (-) TimerEvent: {}
+[25.177833] (-) TimerEvent: {}
+[25.278612] (-) TimerEvent: {}
+[25.379181] (-) TimerEvent: {}
+[25.479827] (-) TimerEvent: {}
+[25.580565] (-) TimerEvent: {}
+[25.669540] (autonomous-warehouse-inspection) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[25.680747] (-) TimerEvent: {}
+[25.781215] (-) TimerEvent: {}
+[25.792136] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[25.828349] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found tf2: 0.25.1 (/opt/ros/humble/share/tf2/cmake)\n'}
+[25.838776] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.1 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[25.881509] (-) TimerEvent: {}
+[25.982077] (-) TimerEvent: {}
+[26.082610] (-) TimerEvent: {}
+[26.099531] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.2 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[26.164492] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[26.174446] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[26.176248] (autonomous-warehouse-inspection) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[26.182740] (-) TimerEvent: {}
+[26.185086] (autonomous-warehouse-inspection) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[26.282896] (-) TimerEvent: {}
+[26.377884] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[26.383101] (-) TimerEvent: {}
+[26.409582] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[26.427031] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[26.483285] (-) TimerEvent: {}
+[26.583722] (-) TimerEvent: {}
+[26.684254] (-) TimerEvent: {}
+[26.784816] (-) TimerEvent: {}
+[26.885504] (-) TimerEvent: {}
+[26.985984] (-) TimerEvent: {}
+[27.084248] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[27.086051] (-) TimerEvent: {}
+[27.186383] (-) TimerEvent: {}
+[27.286819] (-) TimerEvent: {}
+[27.387270] (-) TimerEvent: {}
+[27.487701] (-) TimerEvent: {}
+[27.588154] (-) TimerEvent: {}
+[27.688631] (-) TimerEvent: {}
+[27.789101] (-) TimerEvent: {}
+[27.889604] (-) TimerEvent: {}
+[27.990014] (-) TimerEvent: {}
+[28.091236] (-) TimerEvent: {}
+[28.192652] (-) TimerEvent: {}
+[28.293727] (-) TimerEvent: {}
+[28.395096] (-) TimerEvent: {}
+[28.483876] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[28.487127] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[28.492318] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[28.494010] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[28.494366] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[28.495196] (-) TimerEvent: {}
+[28.502098] (autonomous-warehouse-inspection) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[28.511834] (autonomous-warehouse-inspection) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[28.530339] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[28.595386] (-) TimerEvent: {}
+[28.696243] (-) TimerEvent: {}
+[28.797541] (-) TimerEvent: {}
+[28.898575] (-) TimerEvent: {}
+[29.000351] (-) TimerEvent: {}
+[29.101388] (-) TimerEvent: {}
+[29.202565] (-) TimerEvent: {}
+[29.303199] (-) TimerEvent: {}
+[29.404556] (-) TimerEvent: {}
+[29.505507] (-) TimerEvent: {}
+[29.606446] (-) TimerEvent: {}
+[29.707107] (-) TimerEvent: {}
+[29.807542] (-) TimerEvent: {}
+[29.908004] (-) TimerEvent: {}
+[30.008819] (-) TimerEvent: {}
+[30.095654] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[30.106500] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[30.108970] (-) TimerEvent: {}
+[30.209513] (-) TimerEvent: {}
+[30.310097] (-) TimerEvent: {}
+[30.411092] (-) TimerEvent: {}
+[30.512007] (-) TimerEvent: {}
+[30.612669] (-) TimerEvent: {}
+[30.713646] (-) TimerEvent: {}
+[30.814787] (-) TimerEvent: {}
+[30.915898] (-) TimerEvent: {}
+[31.016393] (-) TimerEvent: {}
+[31.116858] (-) TimerEvent: {}
+[31.217289] (-) TimerEvent: {}
+[31.318043] (-) TimerEvent: {}
+[31.418791] (-) TimerEvent: {}
+[31.519596] (-) TimerEvent: {}
+[31.533622] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[31.534674] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[31.619895] (-) TimerEvent: {}
+[31.720488] (-) TimerEvent: {}
+[31.821063] (-) TimerEvent: {}
+[31.921626] (-) TimerEvent: {}
+[32.022121] (-) TimerEvent: {}
+[32.122535] (-) TimerEvent: {}
+[32.222947] (-) TimerEvent: {}
+[32.323405] (-) TimerEvent: {}
+[32.424028] (-) TimerEvent: {}
+[32.524424] (-) TimerEvent: {}
+[32.624828] (-) TimerEvent: {}
+[32.725261] (-) TimerEvent: {}
+[32.825720] (-) TimerEvent: {}
+[32.926228] (-) TimerEvent: {}
+[32.986767] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[32.987024] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[33.026381] (-) TimerEvent: {}
+[33.126822] (-) TimerEvent: {}
+[33.227321] (-) TimerEvent: {}
+[33.327777] (-) TimerEvent: {}
+[33.428223] (-) TimerEvent: {}
+[33.528651] (-) TimerEvent: {}
+[33.629072] (-) TimerEvent: {}
+[33.729535] (-) TimerEvent: {}
+[33.830039] (-) TimerEvent: {}
+[33.930570] (-) TimerEvent: {}
+[34.031020] (-) TimerEvent: {}
+[34.131487] (-) TimerEvent: {}
+[34.231969] (-) TimerEvent: {}
+[34.267174] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[34.267490] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[34.332140] (-) TimerEvent: {}
+[34.432589] (-) TimerEvent: {}
+[34.533213] (-) TimerEvent: {}
+[34.633655] (-) TimerEvent: {}
+[34.734165] (-) TimerEvent: {}
+[34.834668] (-) TimerEvent: {}
+[34.935309] (-) TimerEvent: {}
+[35.035921] (-) TimerEvent: {}
+[35.136694] (-) TimerEvent: {}
+[35.237766] (-) TimerEvent: {}
+[35.338885] (-) TimerEvent: {}
+[35.439557] (-) TimerEvent: {}
+[35.501651] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[35.502121] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[35.539828] (-) TimerEvent: {}
+[35.640614] (-) TimerEvent: {}
+[35.741420] (-) TimerEvent: {}
+[35.842523] (-) TimerEvent: {}
+[35.943338] (-) TimerEvent: {}
+[36.044846] (-) TimerEvent: {}
+[36.145272] (-) TimerEvent: {}
+[36.245690] (-) TimerEvent: {}
+[36.346168] (-) TimerEvent: {}
+[36.446810] (-) TimerEvent: {}
+[36.547801] (-) TimerEvent: {}
+[36.648251] (-) TimerEvent: {}
+[36.748794] (-) TimerEvent: {}
+[36.849461] (-) TimerEvent: {}
+[36.871692] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[36.872190] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[36.949631] (-) TimerEvent: {}
+[37.050447] (-) TimerEvent: {}
+[37.151763] (-) TimerEvent: {}
+[37.252747] (-) TimerEvent: {}
+[37.353806] (-) TimerEvent: {}
+[37.454631] (-) TimerEvent: {}
+[37.555580] (-) TimerEvent: {}
+[37.656517] (-) TimerEvent: {}
+[37.757342] (-) TimerEvent: {}
+[37.858010] (-) TimerEvent: {}
+[37.958820] (-) TimerEvent: {}
+[38.059421] (-) TimerEvent: {}
+[38.159999] (-) TimerEvent: {}
+[38.260609] (-) TimerEvent: {}
+[38.294019] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[38.360727] (-) TimerEvent: {}
+[38.462328] (-) TimerEvent: {}
+[38.563796] (-) TimerEvent: {}
+[38.664709] (-) TimerEvent: {}
+[38.765539] (-) TimerEvent: {}
+[38.866388] (-) TimerEvent: {}
+[38.967186] (-) TimerEvent: {}
+[39.067764] (-) TimerEvent: {}
+[39.168302] (-) TimerEvent: {}
+[39.269157] (-) TimerEvent: {}
+[39.369891] (-) TimerEvent: {}
+[39.470421] (-) TimerEvent: {}
+[39.571032] (-) TimerEvent: {}
+[39.671721] (-) TimerEvent: {}
+[39.772565] (-) TimerEvent: {}
+[39.873164] (-) TimerEvent: {}
+[39.973588] (-) TimerEvent: {}
+[40.074208] (-) TimerEvent: {}
+[40.174772] (-) TimerEvent: {}
+[40.275219] (-) TimerEvent: {}
+[40.375779] (-) TimerEvent: {}
+[40.476444] (-) TimerEvent: {}
+[40.576951] (-) TimerEvent: {}
+[40.677396] (-) TimerEvent: {}
+[40.778239] (-) TimerEvent: {}
+[40.879035] (-) TimerEvent: {}
+[40.979529] (-) TimerEvent: {}
+[41.079985] (-) TimerEvent: {}
+[41.180896] (-) TimerEvent: {}
+[41.281960] (-) TimerEvent: {}
+[41.382432] (-) TimerEvent: {}
+[41.482979] (-) TimerEvent: {}
+[41.584095] (-) TimerEvent: {}
+[41.685210] (-) TimerEvent: {}
+[41.785663] (-) TimerEvent: {}
+[41.886130] (-) TimerEvent: {}
+[41.986830] (-) TimerEvent: {}
+[42.087878] (-) TimerEvent: {}
+[42.188337] (-) TimerEvent: {}
+[42.288803] (-) TimerEvent: {}
+[42.389306] (-) TimerEvent: {}
+[42.489870] (-) TimerEvent: {}
+[42.590354] (-) TimerEvent: {}
+[42.691080] (-) TimerEvent: {}
+[42.791772] (-) TimerEvent: {}
+[42.892205] (-) TimerEvent: {}
+[42.992675] (-) TimerEvent: {}
+[43.093564] (-) TimerEvent: {}
+[43.194005] (-) TimerEvent: {}
+[43.294443] (-) TimerEvent: {}
+[43.394861] (-) TimerEvent: {}
+[43.495326] (-) TimerEvent: {}
+[43.595903] (-) TimerEvent: {}
+[43.696436] (-) TimerEvent: {}
+[43.796871] (-) TimerEvent: {}
+[43.897620] (-) TimerEvent: {}
+[43.998117] (-) TimerEvent: {}
+[44.098701] (-) TimerEvent: {}
+[44.199311] (-) TimerEvent: {}
+[44.299912] (-) TimerEvent: {}
+[44.400779] (-) TimerEvent: {}
+[44.501469] (-) TimerEvent: {}
+[44.602164] (-) TimerEvent: {}
+[44.702819] (-) TimerEvent: {}
+[44.803393] (-) TimerEvent: {}
+[44.904023] (-) TimerEvent: {}
+[45.004797] (-) TimerEvent: {}
+[45.105377] (-) TimerEvent: {}
+[45.205904] (-) TimerEvent: {}
+[45.306735] (-) TimerEvent: {}
+[45.407634] (-) TimerEvent: {}
+[45.508099] (-) TimerEvent: {}
+[45.608869] (-) TimerEvent: {}
+[45.709398] (-) TimerEvent: {}
+[45.809909] (-) TimerEvent: {}
+[45.910468] (-) TimerEvent: {}
+[46.011047] (-) TimerEvent: {}
+[46.111837] (-) TimerEvent: {}
+[46.212321] (-) TimerEvent: {}
+[46.312891] (-) TimerEvent: {}
+[46.413490] (-) TimerEvent: {}
+[46.514252] (-) TimerEvent: {}
+[46.614843] (-) TimerEvent: {}
+[46.715294] (-) TimerEvent: {}
+[46.815734] (-) TimerEvent: {}
+[46.916269] (-) TimerEvent: {}
+[47.016768] (-) TimerEvent: {}
+[47.117250] (-) TimerEvent: {}
+[47.217919] (-) TimerEvent: {}
+[47.318455] (-) TimerEvent: {}
+[47.418931] (-) TimerEvent: {}
+[47.519394] (-) TimerEvent: {}
+[47.619939] (-) TimerEvent: {}
+[47.720387] (-) TimerEvent: {}
+[47.820855] (-) TimerEvent: {}
+[47.921309] (-) TimerEvent: {}
+[48.021732] (-) TimerEvent: {}
+[48.122145] (-) TimerEvent: {}
+[48.222575] (-) TimerEvent: {}
+[48.322993] (-) TimerEvent: {}
+[48.423509] (-) TimerEvent: {}
+[48.524045] (-) TimerEvent: {}
+[48.624477] (-) TimerEvent: {}
+[48.725102] (-) TimerEvent: {}
+[48.825728] (-) TimerEvent: {}
+[48.926217] (-) TimerEvent: {}
+[49.026655] (-) TimerEvent: {}
+[49.127134] (-) TimerEvent: {}
+[49.227750] (-) TimerEvent: {}
+[49.328605] (-) TimerEvent: {}
+[49.429824] (-) TimerEvent: {}
+[49.530358] (-) TimerEvent: {}
+[49.631675] (-) TimerEvent: {}
+[49.732342] (-) TimerEvent: {}
+[49.833441] (-) TimerEvent: {}
+[49.934242] (-) TimerEvent: {}
+[50.034948] (-) TimerEvent: {}
+[50.135651] (-) TimerEvent: {}
+[50.236566] (-) TimerEvent: {}
+[50.337077] (-) TimerEvent: {}
+[50.437727] (-) TimerEvent: {}
+[50.538442] (-) TimerEvent: {}
+[50.639428] (-) TimerEvent: {}
+[50.739959] (-) TimerEvent: {}
+[50.840598] (-) TimerEvent: {}
+[50.941502] (-) TimerEvent: {}
+[51.042340] (-) TimerEvent: {}
+[51.142814] (-) TimerEvent: {}
+[51.243319] (-) TimerEvent: {}
+[51.343867] (-) TimerEvent: {}
+[51.444299] (-) TimerEvent: {}
+[51.544732] (-) TimerEvent: {}
+[51.645138] (-) TimerEvent: {}
+[51.745553] (-) TimerEvent: {}
+[51.846116] (-) TimerEvent: {}
+[51.946554] (-) TimerEvent: {}
+[52.047026] (-) TimerEvent: {}
+[52.147618] (-) TimerEvent: {}
+[52.248046] (-) TimerEvent: {}
+[52.348479] (-) TimerEvent: {}
+[52.448871] (-) TimerEvent: {}
+[52.549309] (-) TimerEvent: {}
+[52.649773] (-) TimerEvent: {}
+[52.750311] (-) TimerEvent: {}
+[52.850768] (-) TimerEvent: {}
+[52.951197] (-) TimerEvent: {}
+[53.051669] (-) TimerEvent: {}
+[53.152104] (-) TimerEvent: {}
+[53.252535] (-) TimerEvent: {}
+[53.353006] (-) TimerEvent: {}
+[53.453526] (-) TimerEvent: {}
+[53.554203] (-) TimerEvent: {}
+[53.654681] (-) TimerEvent: {}
+[53.755154] (-) TimerEvent: {}
+[53.855565] (-) TimerEvent: {}
+[53.955985] (-) TimerEvent: {}
+[54.056720] (-) TimerEvent: {}
+[54.157375] (-) TimerEvent: {}
+[54.258297] (-) TimerEvent: {}
+[54.358988] (-) TimerEvent: {}
+[54.459774] (-) TimerEvent: {}
+[54.560405] (-) TimerEvent: {}
+[54.661201] (-) TimerEvent: {}
+[54.761998] (-) TimerEvent: {}
+[54.863161] (-) TimerEvent: {}
+[54.964609] (-) TimerEvent: {}
+[55.065148] (-) TimerEvent: {}
+[55.166096] (-) TimerEvent: {}
+[55.266572] (-) TimerEvent: {}
+[55.367666] (-) TimerEvent: {}
+[55.468365] (-) TimerEvent: {}
+[55.569011] (-) TimerEvent: {}
+[55.669445] (-) TimerEvent: {}
+[55.769954] (-) TimerEvent: {}
+[55.870595] (-) TimerEvent: {}
+[55.971297] (-) TimerEvent: {}
+[56.071761] (-) TimerEvent: {}
+[56.172194] (-) TimerEvent: {}
+[56.272632] (-) TimerEvent: {}
+[56.373077] (-) TimerEvent: {}
+[56.473638] (-) TimerEvent: {}
+[56.574053] (-) TimerEvent: {}
+[56.674457] (-) TimerEvent: {}
+[56.774954] (-) TimerEvent: {}
+[56.875388] (-) TimerEvent: {}
+[56.976242] (-) TimerEvent: {}
+[57.077653] (-) TimerEvent: {}
+[57.178066] (-) TimerEvent: {}
+[57.278726] (-) TimerEvent: {}
+[57.379339] (-) TimerEvent: {}
+[57.479760] (-) TimerEvent: {}
+[57.580252] (-) TimerEvent: {}
+[57.680881] (-) TimerEvent: {}
+[57.781411] (-) TimerEvent: {}
+[57.881981] (-) TimerEvent: {}
+[57.982893] (-) TimerEvent: {}
+[58.083364] (-) TimerEvent: {}
+[58.183870] (-) TimerEvent: {}
+[58.284273] (-) TimerEvent: {}
+[58.385095] (-) TimerEvent: {}
+[58.486341] (-) TimerEvent: {}
+[58.587234] (-) TimerEvent: {}
+[58.687928] (-) TimerEvent: {}
+[58.788768] (-) TimerEvent: {}
+[58.889430] (-) TimerEvent: {}
+[58.990022] (-) TimerEvent: {}
+[59.090735] (-) TimerEvent: {}
+[59.191430] (-) TimerEvent: {}
+[59.292198] (-) TimerEvent: {}
+[59.392972] (-) TimerEvent: {}
+[59.493573] (-) TimerEvent: {}
+[59.594444] (-) TimerEvent: {}
+[59.694966] (-) TimerEvent: {}
+[59.796052] (-) TimerEvent: {}
+[59.896683] (-) TimerEvent: {}
+[59.997363] (-) TimerEvent: {}
+[60.097806] (-) TimerEvent: {}
+[60.198482] (-) TimerEvent: {}
+[60.299200] (-) TimerEvent: {}
+[60.399929] (-) TimerEvent: {}
+[60.500656] (-) TimerEvent: {}
+[60.601825] (-) TimerEvent: {}
+[60.703091] (-) TimerEvent: {}
+[60.804128] (-) TimerEvent: {}
+[60.904533] (-) TimerEvent: {}
+[61.004955] (-) TimerEvent: {}
+[61.105545] (-) TimerEvent: {}
+[61.206086] (-) TimerEvent: {}
+[61.306483] (-) TimerEvent: {}
+[61.407099] (-) TimerEvent: {}
+[61.507920] (-) TimerEvent: {}
+[61.608585] (-) TimerEvent: {}
+[61.709312] (-) TimerEvent: {}
+[61.809880] (-) TimerEvent: {}
+[61.910405] (-) TimerEvent: {}
+[62.011208] (-) TimerEvent: {}
+[62.111997] (-) TimerEvent: {}
+[62.212588] (-) TimerEvent: {}
+[62.313211] (-) TimerEvent: {}
+[62.413667] (-) TimerEvent: {}
+[62.514230] (-) TimerEvent: {}
+[62.614976] (-) TimerEvent: {}
+[62.716147] (-) TimerEvent: {}
+[62.816594] (-) TimerEvent: {}
+[62.917362] (-) TimerEvent: {}
+[63.017798] (-) TimerEvent: {}
+[63.118281] (-) TimerEvent: {}
+[63.218965] (-) TimerEvent: {}
+[63.319564] (-) TimerEvent: {}
+[63.420602] (-) TimerEvent: {}
+[63.521113] (-) TimerEvent: {}
+[63.621642] (-) TimerEvent: {}
+[63.722174] (-) TimerEvent: {}
+[63.822590] (-) TimerEvent: {}
+[63.923024] (-) TimerEvent: {}
+[64.023588] (-) TimerEvent: {}
+[64.124410] (-) TimerEvent: {}
+[64.224863] (-) TimerEvent: {}
+[64.325333] (-) TimerEvent: {}
+[64.426530] (-) TimerEvent: {}
+[64.527985] (-) TimerEvent: {}
+[64.629073] (-) TimerEvent: {}
+[64.729699] (-) TimerEvent: {}
+[64.830185] (-) TimerEvent: {}
+[64.930669] (-) TimerEvent: {}
+[65.031186] (-) TimerEvent: {}
+[65.132162] (-) TimerEvent: {}
+[65.232729] (-) TimerEvent: {}
+[65.333360] (-) TimerEvent: {}
+[65.433824] (-) TimerEvent: {}
+[65.534278] (-) TimerEvent: {}
+[65.634695] (-) TimerEvent: {}
+[65.735168] (-) TimerEvent: {}
+[65.835823] (-) TimerEvent: {}
+[65.936728] (-) TimerEvent: {}
+[66.037402] (-) TimerEvent: {}
+[66.137959] (-) TimerEvent: {}
+[66.238554] (-) TimerEvent: {}
+[66.339213] (-) TimerEvent: {}
+[66.439706] (-) TimerEvent: {}
+[66.540246] (-) TimerEvent: {}
+[66.640827] (-) TimerEvent: {}
+[66.741414] (-) TimerEvent: {}
+[66.841942] (-) TimerEvent: {}
+[66.942365] (-) TimerEvent: {}
+[67.042851] (-) TimerEvent: {}
+[67.143504] (-) TimerEvent: {}
+[67.243977] (-) TimerEvent: {}
+[67.344469] (-) TimerEvent: {}
+[67.445051] (-) TimerEvent: {}
+[67.545563] (-) TimerEvent: {}
+[67.646055] (-) TimerEvent: {}
+[67.746931] (-) TimerEvent: {}
+[67.847974] (-) TimerEvent: {}
+[67.948651] (-) TimerEvent: {}
+[68.049260] (-) TimerEvent: {}
+[68.149714] (-) TimerEvent: {}
+[68.250191] (-) TimerEvent: {}
+[68.350972] (-) TimerEvent: {}
+[68.451541] (-) TimerEvent: {}
+[68.552363] (-) TimerEvent: {}
+[68.652831] (-) TimerEvent: {}
+[68.753389] (-) TimerEvent: {}
+[68.853903] (-) TimerEvent: {}
+[68.954336] (-) TimerEvent: {}
+[69.054733] (-) TimerEvent: {}
+[69.155144] (-) TimerEvent: {}
+[69.255646] (-) TimerEvent: {}
+[69.356295] (-) TimerEvent: {}
+[69.456741] (-) TimerEvent: {}
+[69.557167] (-) TimerEvent: {}
+[69.657918] (-) TimerEvent: {}
+[69.758831] (-) TimerEvent: {}
+[69.859295] (-) TimerEvent: {}
+[69.959766] (-) TimerEvent: {}
+[70.060232] (-) TimerEvent: {}
+[70.160716] (-) TimerEvent: {}
+[70.261207] (-) TimerEvent: {}
+[70.361688] (-) TimerEvent: {}
+[70.462282] (-) TimerEvent: {}
+[70.562871] (-) TimerEvent: {}
+[70.663423] (-) TimerEvent: {}
+[70.763892] (-) TimerEvent: {}
+[70.864307] (-) TimerEvent: {}
+[70.964712] (-) TimerEvent: {}
+[71.065137] (-) TimerEvent: {}
+[71.165596] (-) TimerEvent: {}
+[71.266102] (-) TimerEvent: {}
+[71.366752] (-) TimerEvent: {}
+[71.467723] (-) TimerEvent: {}
+[71.568381] (-) TimerEvent: {}
+[71.669183] (-) TimerEvent: {}
+[71.769580] (-) TimerEvent: {}
+[71.870003] (-) TimerEvent: {}
+[71.970481] (-) TimerEvent: {}
+[72.070899] (-) TimerEvent: {}
+[72.171355] (-) TimerEvent: {}
+[72.271795] (-) TimerEvent: {}
+[72.372225] (-) TimerEvent: {}
+[72.472599] (-) TimerEvent: {}
+[72.573014] (-) TimerEvent: {}
+[72.673492] (-) TimerEvent: {}
+[72.774067] (-) TimerEvent: {}
+[72.874482] (-) TimerEvent: {}
+[72.974938] (-) TimerEvent: {}
+[73.075346] (-) TimerEvent: {}
+[73.175774] (-) TimerEvent: {}
+[73.276181] (-) TimerEvent: {}
+[73.376628] (-) TimerEvent: {}
+[73.477041] (-) TimerEvent: {}
+[73.577884] (-) TimerEvent: {}
+[73.678415] (-) TimerEvent: {}
+[73.778865] (-) TimerEvent: {}
+[73.879321] (-) TimerEvent: {}
+[73.979864] (-) TimerEvent: {}
+[74.080667] (-) TimerEvent: {}
+[74.181383] (-) TimerEvent: {}
+[74.282210] (-) TimerEvent: {}
+[74.382878] (-) TimerEvent: {}
+[74.483730] (-) TimerEvent: {}
+[74.584195] (-) TimerEvent: {}
+[74.684852] (-) TimerEvent: {}
+[74.785603] (-) TimerEvent: {}
+[74.886202] (-) TimerEvent: {}
+[74.986675] (-) TimerEvent: {}
+[75.087227] (-) TimerEvent: {}
+[75.187963] (-) TimerEvent: {}
+[75.288736] (-) TimerEvent: {}
+[75.389516] (-) TimerEvent: {}
+[75.490298] (-) TimerEvent: {}
+[75.591011] (-) TimerEvent: {}
+[75.691722] (-) TimerEvent: {}
+[75.792337] (-) TimerEvent: {}
+[75.893249] (-) TimerEvent: {}
+[75.994499] (-) TimerEvent: {}
+[76.095427] (-) TimerEvent: {}
+[76.196267] (-) TimerEvent: {}
+[76.296751] (-) TimerEvent: {}
+[76.397228] (-) TimerEvent: {}
+[76.497920] (-) TimerEvent: {}
+[76.599143] (-) TimerEvent: {}
+[76.700015] (-) TimerEvent: {}
+[76.801147] (-) TimerEvent: {}
+[76.903201] (-) TimerEvent: {}
+[77.003699] (-) TimerEvent: {}
+[77.104220] (-) TimerEvent: {}
+[77.204628] (-) TimerEvent: {}
+[77.305408] (-) TimerEvent: {}
+[77.406440] (-) TimerEvent: {}
+[77.507317] (-) TimerEvent: {}
+[77.608791] (-) TimerEvent: {}
+[77.709340] (-) TimerEvent: {}
+[77.809962] (-) TimerEvent: {}
+[77.910779] (-) TimerEvent: {}
+[78.011237] (-) TimerEvent: {}
+[78.111705] (-) TimerEvent: {}
+[78.212182] (-) TimerEvent: {}
+[78.312952] (-) TimerEvent: {}
+[78.413694] (-) TimerEvent: {}
+[78.514283] (-) TimerEvent: {}
+[78.614717] (-) TimerEvent: {}
+[78.715156] (-) TimerEvent: {}
+[78.815627] (-) TimerEvent: {}
+[78.916134] (-) TimerEvent: {}
+[79.016784] (-) TimerEvent: {}
+[79.117285] (-) TimerEvent: {}
+[79.217727] (-) TimerEvent: {}
+[79.318423] (-) TimerEvent: {}
+[79.418879] (-) TimerEvent: {}
+[79.519381] (-) TimerEvent: {}
+[79.620040] (-) TimerEvent: {}
+[79.720544] (-) TimerEvent: {}
+[79.821007] (-) TimerEvent: {}
+[79.921449] (-) TimerEvent: {}
+[80.021964] (-) TimerEvent: {}
+[80.122501] (-) TimerEvent: {}
+[80.223533] (-) TimerEvent: {}
+[80.325408] (-) TimerEvent: {}
+[80.426103] (-) TimerEvent: {}
+[80.527023] (-) TimerEvent: {}
+[80.627843] (-) TimerEvent: {}
+[80.728561] (-) TimerEvent: {}
+[80.829331] (-) TimerEvent: {}
+[80.929968] (-) TimerEvent: {}
+[81.030699] (-) TimerEvent: {}
+[81.131140] (-) TimerEvent: {}
+[81.231558] (-) TimerEvent: {}
+[81.332142] (-) TimerEvent: {}
+[81.432554] (-) TimerEvent: {}
+[81.533110] (-) TimerEvent: {}
+[81.633666] (-) TimerEvent: {}
+[81.734378] (-) TimerEvent: {}
+[81.835026] (-) TimerEvent: {}
+[81.935491] (-) TimerEvent: {}
+[82.035900] (-) TimerEvent: {}
+[82.136325] (-) TimerEvent: {}
+[82.236730] (-) TimerEvent: {}
+[82.337336] (-) TimerEvent: {}
+[82.437866] (-) TimerEvent: {}
+[82.538450] (-) TimerEvent: {}
+[82.638939] (-) TimerEvent: {}
+[82.739506] (-) TimerEvent: {}
+[82.840054] (-) TimerEvent: {}
+[82.940607] (-) TimerEvent: {}
+[83.041206] (-) TimerEvent: {}
+[83.141665] (-) TimerEvent: {}
+[83.242163] (-) TimerEvent: {}
+[83.342603] (-) TimerEvent: {}
+[83.443016] (-) TimerEvent: {}
+[83.543425] (-) TimerEvent: {}
+[83.643900] (-) TimerEvent: {}
+[83.744447] (-) TimerEvent: {}
+[83.845035] (-) TimerEvent: {}
+[83.945580] (-) TimerEvent: {}
+[84.046137] (-) TimerEvent: {}
+[84.146564] (-) TimerEvent: {}
+[84.247163] (-) TimerEvent: {}
+[84.347984] (-) TimerEvent: {}
+[84.448737] (-) TimerEvent: {}
+[84.549341] (-) TimerEvent: {}
+[84.649980] (-) TimerEvent: {}
+[84.751009] (-) TimerEvent: {}
+[84.851680] (-) TimerEvent: {}
+[84.952412] (-) TimerEvent: {}
+[85.053063] (-) TimerEvent: {}
+[85.153715] (-) TimerEvent: {}
+[85.254170] (-) TimerEvent: {}
+[85.354623] (-) TimerEvent: {}
+[85.455291] (-) TimerEvent: {}
+[85.556039] (-) TimerEvent: {}
+[85.656457] (-) TimerEvent: {}
+[85.756917] (-) TimerEvent: {}
+[85.857365] (-) TimerEvent: {}
+[85.957820] (-) TimerEvent: {}
+[86.058632] (-) TimerEvent: {}
+[86.159654] (-) TimerEvent: {}
+[86.260083] (-) TimerEvent: {}
+[86.360573] (-) TimerEvent: {}
+[86.461195] (-) TimerEvent: {}
+[86.561855] (-) TimerEvent: {}
+[86.662295] (-) TimerEvent: {}
+[86.762739] (-) TimerEvent: {}
+[86.863680] (-) TimerEvent: {}
+[86.964668] (-) TimerEvent: {}
+[87.065077] (-) TimerEvent: {}
+[87.165527] (-) TimerEvent: {}
+[87.266195] (-) TimerEvent: {}
+[87.367025] (-) TimerEvent: {}
+[87.467665] (-) TimerEvent: {}
+[87.568239] (-) TimerEvent: {}
+[87.668894] (-) TimerEvent: {}
+[87.769350] (-) TimerEvent: {}
+[87.869894] (-) TimerEvent: {}
+[87.970365] (-) TimerEvent: {}
+[88.071008] (-) TimerEvent: {}
+[88.171630] (-) TimerEvent: {}
+[88.272126] (-) TimerEvent: {}
+[88.373026] (-) TimerEvent: {}
+[88.473657] (-) TimerEvent: {}
+[88.574441] (-) TimerEvent: {}
+[88.675018] (-) TimerEvent: {}
+[88.775830] (-) TimerEvent: {}
+[88.876706] (-) TimerEvent: {}
+[88.977399] (-) TimerEvent: {}
+[89.077988] (-) TimerEvent: {}
+[89.178779] (-) TimerEvent: {}
+[89.279966] (-) TimerEvent: {}
+[89.380892] (-) TimerEvent: {}
+[89.481927] (-) TimerEvent: {}
+[89.582530] (-) TimerEvent: {}
+[89.683392] (-) TimerEvent: {}
+[89.784505] (-) TimerEvent: {}
+[89.885912] (-) TimerEvent: {}
+[89.986468] (-) TimerEvent: {}
+[90.087020] (-) TimerEvent: {}
+[90.187957] (-) TimerEvent: {}
+[90.289193] (-) TimerEvent: {}
+[90.390042] (-) TimerEvent: {}
+[90.490668] (-) TimerEvent: {}
+[90.591618] (-) TimerEvent: {}
+[90.692177] (-) TimerEvent: {}
+[90.792654] (-) TimerEvent: {}
+[90.893166] (-) TimerEvent: {}
+[90.993697] (-) TimerEvent: {}
+[91.094509] (-) TimerEvent: {}
+[91.194930] (-) TimerEvent: {}
+[91.295359] (-) TimerEvent: {}
+[91.395801] (-) TimerEvent: {}
+[91.496543] (-) TimerEvent: {}
+[91.597232] (-) TimerEvent: {}
+[91.697726] (-) TimerEvent: {}
+[91.798270] (-) TimerEvent: {}
+[91.903488] (-) TimerEvent: {}
+[92.004063] (-) TimerEvent: {}
+[92.104502] (-) TimerEvent: {}
+[92.204920] (-) TimerEvent: {}
+[92.305340] (-) TimerEvent: {}
+[92.405842] (-) TimerEvent: {}
+[92.506416] (-) TimerEvent: {}
+[92.606892] (-) TimerEvent: {}
+[92.707362] (-) TimerEvent: {}
+[92.808178] (-) TimerEvent: {}
+[92.908879] (-) TimerEvent: {}
+[93.009474] (-) TimerEvent: {}
+[93.109930] (-) TimerEvent: {}
+[93.210400] (-) TimerEvent: {}
+[93.310864] (-) TimerEvent: {}
+[93.411471] (-) TimerEvent: {}
+[93.512050] (-) TimerEvent: {}
+[93.612978] (-) TimerEvent: {}
+[93.713886] (-) TimerEvent: {}
+[93.814293] (-) TimerEvent: {}
+[93.915423] (-) TimerEvent: {}
+[94.016129] (-) TimerEvent: {}
+[94.117370] (-) TimerEvent: {}
+[94.217918] (-) TimerEvent: {}
+[94.318529] (-) TimerEvent: {}
+[94.419194] (-) TimerEvent: {}
+[94.519733] (-) TimerEvent: {}
+[94.620420] (-) TimerEvent: {}
+[94.721007] (-) TimerEvent: {}
+[94.821556] (-) TimerEvent: {}
+[94.922096] (-) TimerEvent: {}
+[95.022741] (-) TimerEvent: {}
+[95.123152] (-) TimerEvent: {}
+[95.223701] (-) TimerEvent: {}
+[95.324249] (-) TimerEvent: {}
+[95.424682] (-) TimerEvent: {}
+[95.525098] (-) TimerEvent: {}
+[95.625520] (-) TimerEvent: {}
+[95.725985] (-) TimerEvent: {}
+[95.826435] (-) TimerEvent: {}
+[95.926861] (-) TimerEvent: {}
+[96.027438] (-) TimerEvent: {}
+[96.127884] (-) TimerEvent: {}
+[96.228299] (-) TimerEvent: {}
+[96.328843] (-) TimerEvent: {}
+[96.429267] (-) TimerEvent: {}
+[96.529710] (-) TimerEvent: {}
+[96.630134] (-) TimerEvent: {}
+[96.730944] (-) TimerEvent: {}
+[96.831761] (-) TimerEvent: {}
+[96.932703] (-) TimerEvent: {}
+[97.033370] (-) TimerEvent: {}
+[97.134785] (-) TimerEvent: {}
+[97.235976] (-) TimerEvent: {}
+[97.336748] (-) TimerEvent: {}
+[97.437327] (-) TimerEvent: {}
+[97.537752] (-) TimerEvent: {}
+[97.638214] (-) TimerEvent: {}
+[97.738683] (-) TimerEvent: {}
+[97.839169] (-) TimerEvent: {}
+[97.939611] (-) TimerEvent: {}
+[98.040094] (-) TimerEvent: {}
+[98.140589] (-) TimerEvent: {}
+[98.241040] (-) TimerEvent: {}
+[98.341546] (-) TimerEvent: {}
+[98.442225] (-) TimerEvent: {}
+[98.542714] (-) TimerEvent: {}
+[98.643251] (-) TimerEvent: {}
+[98.744028] (-) TimerEvent: {}
+[98.844495] (-) TimerEvent: {}
+[98.945191] (-) TimerEvent: {}
+[99.046295] (-) TimerEvent: {}
+[99.146835] (-) TimerEvent: {}
+[99.247366] (-) TimerEvent: {}
+[99.347884] (-) TimerEvent: {}
+[99.448351] (-) TimerEvent: {}
+[99.548902] (-) TimerEvent: {}
+[99.649452] (-) TimerEvent: {}
+[99.749966] (-) TimerEvent: {}
+[99.850433] (-) TimerEvent: {}
+[99.950945] (-) TimerEvent: {}
+[100.051542] (-) TimerEvent: {}
+[100.151942] (-) TimerEvent: {}
+[100.252375] (-) TimerEvent: {}
+[100.352814] (-) TimerEvent: {}
+[100.453269] (-) TimerEvent: {}
+[100.553684] (-) TimerEvent: {}
+[100.654212] (-) TimerEvent: {}
+[100.754648] (-) TimerEvent: {}
+[100.855175] (-) TimerEvent: {}
+[100.955572] (-) TimerEvent: {}
+[101.056517] (-) TimerEvent: {}
+[101.157728] (-) TimerEvent: {}
+[101.258167] (-) TimerEvent: {}
+[101.358713] (-) TimerEvent: {}
+[101.459668] (-) TimerEvent: {}
+[101.560820] (-) TimerEvent: {}
+[101.661394] (-) TimerEvent: {}
+[101.762135] (-) TimerEvent: {}
+[101.863322] (-) TimerEvent: {}
+[101.964730] (-) TimerEvent: {}
+[102.065422] (-) TimerEvent: {}
+[102.166302] (-) TimerEvent: {}
+[102.266891] (-) TimerEvent: {}
+[102.367552] (-) TimerEvent: {}
+[102.468180] (-) TimerEvent: {}
+[102.568787] (-) TimerEvent: {}
+[102.669390] (-) TimerEvent: {}
+[102.769969] (-) TimerEvent: {}
+[102.870586] (-) TimerEvent: {}
+[102.971081] (-) TimerEvent: {}
+[103.071862] (-) TimerEvent: {}
+[103.172642] (-) TimerEvent: {}
+[103.273124] (-) TimerEvent: {}
+[103.373662] (-) TimerEvent: {}
+[103.474120] (-) TimerEvent: {}
+[103.574591] (-) TimerEvent: {}
+[103.675027] (-) TimerEvent: {}
+[103.775466] (-) TimerEvent: {}
+[103.875915] (-) TimerEvent: {}
+[103.976375] (-) TimerEvent: {}
+[104.076839] (-) TimerEvent: {}
+[104.177380] (-) TimerEvent: {}
+[104.277788] (-) TimerEvent: {}
+[104.378185] (-) TimerEvent: {}
+[104.478982] (-) TimerEvent: {}
+[104.579680] (-) TimerEvent: {}
+[104.680602] (-) TimerEvent: {}
+[104.781467] (-) TimerEvent: {}
+[104.882535] (-) TimerEvent: {}
+[104.982955] (-) TimerEvent: {}
+[105.083415] (-) TimerEvent: {}
+[105.184238] (-) TimerEvent: {}
+[105.285325] (-) TimerEvent: {}
+[105.386178] (-) TimerEvent: {}
+[105.486688] (-) TimerEvent: {}
+[105.587234] (-) TimerEvent: {}
+[105.687679] (-) TimerEvent: {}
+[105.788135] (-) TimerEvent: {}
+[105.888835] (-) TimerEvent: {}
+[105.989526] (-) TimerEvent: {}
+[106.090062] (-) TimerEvent: {}
+[106.190697] (-) TimerEvent: {}
+[106.291190] (-) TimerEvent: {}
+[106.391934] (-) TimerEvent: {}
+[106.492435] (-) TimerEvent: {}
+[106.593060] (-) TimerEvent: {}
+[106.693852] (-) TimerEvent: {}
+[106.794325] (-) TimerEvent: {}
+[106.894806] (-) TimerEvent: {}
+[106.995344] (-) TimerEvent: {}
+[107.095840] (-) TimerEvent: {}
+[107.196260] (-) TimerEvent: {}
+[107.296734] (-) TimerEvent: {}
+[107.397316] (-) TimerEvent: {}
+[107.497893] (-) TimerEvent: {}
+[107.598443] (-) TimerEvent: {}
+[107.698909] (-) TimerEvent: {}
+[107.799503] (-) TimerEvent: {}
+[107.900020] (-) TimerEvent: {}
+[108.001013] (-) TimerEvent: {}
+[108.101771] (-) TimerEvent: {}
+[108.202505] (-) TimerEvent: {}
+[108.303097] (-) TimerEvent: {}
+[108.403847] (-) TimerEvent: {}
+[108.504524] (-) TimerEvent: {}
+[108.604958] (-) TimerEvent: {}
+[108.705655] (-) TimerEvent: {}
+[108.806531] (-) TimerEvent: {}
+[108.907498] (-) TimerEvent: {}
+[109.008273] (-) TimerEvent: {}
+[109.109276] (-) TimerEvent: {}
+[109.209728] (-) TimerEvent: {}
+[109.310287] (-) TimerEvent: {}
+[109.410867] (-) TimerEvent: {}
+[109.511549] (-) TimerEvent: {}
+[109.612272] (-) TimerEvent: {}
+[109.713319] (-) TimerEvent: {}
+[109.813964] (-) TimerEvent: {}
+[109.841700] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[109.843477] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[109.844037] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[109.914091] (-) TimerEvent: {}
+[110.014527] (-) TimerEvent: {}
+[110.114913] (-) TimerEvent: {}
+[110.215587] (-) TimerEvent: {}
+[110.316017] (-) TimerEvent: {}
+[110.416484] (-) TimerEvent: {}
+[110.516967] (-) TimerEvent: {}
+[110.617524] (-) TimerEvent: {}
+[110.717957] (-) TimerEvent: {}
+[110.818409] (-) TimerEvent: {}
+[110.918836] (-) TimerEvent: {}
+[111.019324] (-) TimerEvent: {}
+[111.119919] (-) TimerEvent: {}
+[111.220523] (-) TimerEvent: {}
+[111.321185] (-) TimerEvent: {}
+[111.421772] (-) TimerEvent: {}
+[111.522478] (-) TimerEvent: {}
+[111.622976] (-) TimerEvent: {}
+[111.723393] (-) TimerEvent: {}
+[111.823901] (-) TimerEvent: {}
+[111.924394] (-) TimerEvent: {}
+[112.024853] (-) TimerEvent: {}
+[112.125501] (-) TimerEvent: {}
+[112.226170] (-) TimerEvent: {}
+[112.326581] (-) TimerEvent: {}
+[112.427030] (-) TimerEvent: {}
+[112.527451] (-) TimerEvent: {}
+[112.627913] (-) TimerEvent: {}
+[112.728808] (-) TimerEvent: {}
+[112.829821] (-) TimerEvent: {}
+[112.930830] (-) TimerEvent: {}
+[113.031724] (-) TimerEvent: {}
+[113.132280] (-) TimerEvent: {}
+[113.233095] (-) TimerEvent: {}
+[113.334098] (-) TimerEvent: {}
+[113.435491] (-) TimerEvent: {}
+[113.536361] (-) TimerEvent: {}
+[113.637428] (-) TimerEvent: {}
+[113.738101] (-) TimerEvent: {}
+[113.839433] (-) TimerEvent: {}
+[113.896981] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[113.939811] (-) TimerEvent: {}
+[114.040719] (-) TimerEvent: {}
+[114.141575] (-) TimerEvent: {}
+[114.242683] (-) TimerEvent: {}
+[114.343686] (-) TimerEvent: {}
+[114.444844] (-) TimerEvent: {}
+[114.545318] (-) TimerEvent: {}
+[114.645798] (-) TimerEvent: {}
+[114.746499] (-) TimerEvent: {}
+[114.847094] (-) TimerEvent: {}
+[114.947537] (-) TimerEvent: {}
+[115.048013] (-) TimerEvent: {}
+[115.148501] (-) TimerEvent: {}
+[115.248956] (-) TimerEvent: {}
+[115.349542] (-) TimerEvent: {}
+[115.450057] (-) TimerEvent: {}
+[115.550532] (-) TimerEvent: {}
+[115.651203] (-) TimerEvent: {}
+[115.751731] (-) TimerEvent: {}
+[115.852390] (-) TimerEvent: {}
+[115.952854] (-) TimerEvent: {}
+[116.053273] (-) TimerEvent: {}
+[116.153850] (-) TimerEvent: {}
+[116.254336] (-) TimerEvent: {}
+[116.354779] (-) TimerEvent: {}
+[116.455365] (-) TimerEvent: {}
+[116.555949] (-) TimerEvent: {}
+[116.656482] (-) TimerEvent: {}
+[116.757025] (-) TimerEvent: {}
+[116.857639] (-) TimerEvent: {}
+[116.958346] (-) TimerEvent: {}
+[117.059071] (-) TimerEvent: {}
+[117.159536] (-) TimerEvent: {}
+[117.260421] (-) TimerEvent: {}
+[117.361665] (-) TimerEvent: {}
+[117.462296] (-) TimerEvent: {}
+[117.562885] (-) TimerEvent: {}
+[117.663737] (-) TimerEvent: {}
+[117.764416] (-) TimerEvent: {}
+[117.803386] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[117.807001] (autonomous-warehouse-inspection) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[117.819143] (autonomous-warehouse-inspection) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[117.846827] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[117.864817] (-) TimerEvent: {}
+[117.965449] (-) TimerEvent: {}
+[118.004864] (autonomous-warehouse-inspection) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[118.012429] (autonomous-warehouse-inspection) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[118.034036] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[118.035482] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[118.035846] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[118.066012] (-) TimerEvent: {}
+[118.166837] (-) TimerEvent: {}
+[118.267483] (-) TimerEvent: {}
+[118.368299] (-) TimerEvent: {}
+[118.469316] (-) TimerEvent: {}
+[118.569961] (-) TimerEvent: {}
+[118.670778] (-) TimerEvent: {}
+[118.771429] (-) TimerEvent: {}
+[118.872127] (-) TimerEvent: {}
+[118.972624] (-) TimerEvent: {}
+[119.073278] (-) TimerEvent: {}
+[119.173880] (-) TimerEvent: {}
+[119.274512] (-) TimerEvent: {}
+[119.374924] (-) TimerEvent: {}
+[119.475465] (-) TimerEvent: {}
+[119.575995] (-) TimerEvent: {}
+[119.676729] (-) TimerEvent: {}
+[119.777214] (-) TimerEvent: {}
+[119.877833] (-) TimerEvent: {}
+[119.978443] (-) TimerEvent: {}
+[120.079009] (-) TimerEvent: {}
+[120.179614] (-) TimerEvent: {}
+[120.280125] (-) TimerEvent: {}
+[120.380614] (-) TimerEvent: {}
+[120.481197] (-) TimerEvent: {}
+[120.581648] (-) TimerEvent: {}
+[120.682110] (-) TimerEvent: {}
+[120.782670] (-) TimerEvent: {}
+[120.883138] (-) TimerEvent: {}
+[120.983635] (-) TimerEvent: {}
+[121.084237] (-) TimerEvent: {}
+[121.184670] (-) TimerEvent: {}
+[121.285183] (-) TimerEvent: {}
+[121.385874] (-) TimerEvent: {}
+[121.486300] (-) TimerEvent: {}
+[121.586784] (-) TimerEvent: {}
+[121.687285] (-) TimerEvent: {}
+[121.787713] (-) TimerEvent: {}
+[121.888143] (-) TimerEvent: {}
+[121.988878] (-) TimerEvent: {}
+[122.089314] (-) TimerEvent: {}
+[122.189755] (-) TimerEvent: {}
+[122.290216] (-) TimerEvent: {}
+[122.364307] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[122.368111] (autonomous-warehouse-inspection) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[122.379958] (autonomous-warehouse-inspection) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[122.390386] (-) TimerEvent: {}
+[122.402787] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[122.404218] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[122.404878] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[122.490548] (-) TimerEvent: {}
+[122.550050] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[122.590796] (-) TimerEvent: {}
+[122.691555] (-) TimerEvent: {}
+[122.700064] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[122.702441] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[122.791735] (-) TimerEvent: {}
+[122.892341] (-) TimerEvent: {}
+[122.993052] (-) TimerEvent: {}
+[122.996888] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[122.997355] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[122.998850] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[122.999187] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[122.999510] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[123.002223] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[123.002554] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[123.093322] (-) TimerEvent: {}
+[123.194657] (-) TimerEvent: {}
+[123.295259] (-) TimerEvent: {}
+[123.395798] (-) TimerEvent: {}
+[123.496297] (-) TimerEvent: {}
+[123.596801] (-) TimerEvent: {}
+[123.697246] (-) TimerEvent: {}
+[123.797693] (-) TimerEvent: {}
+[123.898223] (-) TimerEvent: {}
+[123.999017] (-) TimerEvent: {}
+[124.099667] (-) TimerEvent: {}
+[124.200232] (-) TimerEvent: {}
+[124.301004] (-) TimerEvent: {}
+[124.401560] (-) TimerEvent: {}
+[124.502172] (-) TimerEvent: {}
+[124.602761] (-) TimerEvent: {}
+[124.703348] (-) TimerEvent: {}
+[124.804035] (-) TimerEvent: {}
+[124.904466] (-) TimerEvent: {}
+[125.004890] (-) TimerEvent: {}
+[125.105355] (-) TimerEvent: {}
+[125.205814] (-) TimerEvent: {}
+[125.306490] (-) TimerEvent: {}
+[125.407027] (-) TimerEvent: {}
+[125.507513] (-) TimerEvent: {}
+[125.608035] (-) TimerEvent: {}
+[125.708595] (-) TimerEvent: {}
+[125.809261] (-) TimerEvent: {}
+[125.909945] (-) TimerEvent: {}
+[126.010443] (-) TimerEvent: {}
+[126.110908] (-) TimerEvent: {}
+[126.211342] (-) TimerEvent: {}
+[126.311748] (-) TimerEvent: {}
+[126.412837] (-) TimerEvent: {}
+[126.514699] (-) TimerEvent: {}
+[126.615371] (-) TimerEvent: {}
+[126.716435] (-) TimerEvent: {}
+[126.817076] (-) TimerEvent: {}
+[126.917672] (-) TimerEvent: {}
+[127.018126] (-) TimerEvent: {}
+[127.118674] (-) TimerEvent: {}
+[127.219219] (-) TimerEvent: {}
+[127.319666] (-) TimerEvent: {}
+[127.420343] (-) TimerEvent: {}
+[127.520934] (-) TimerEvent: {}
+[127.621917] (-) TimerEvent: {}
+[127.654743] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[127.663739] (autonomous-warehouse-inspection) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[127.673596] (autonomous-warehouse-inspection) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[127.692627] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[127.697438] (autonomous-warehouse-inspection) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[127.706694] (autonomous-warehouse-inspection) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[127.721996] (-) TimerEvent: {}
+[127.727221] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[127.727555] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[127.727730] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[127.727998] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[127.730713] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[127.730997] (autonomous-warehouse-inspection) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[127.742741] (autonomous-warehouse-inspection) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[127.769593] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.2 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[127.822221] (-) TimerEvent: {}
+[127.846384] (autonomous-warehouse-inspection) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[127.850396] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[127.912976] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Configuring done\n'}
+[127.922488] (-) TimerEvent: {}
+[127.946527] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Generating done\n'}
+[127.948513] (autonomous-warehouse-inspection) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[127.948743] (autonomous-warehouse-inspection) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[127.948827] (autonomous-warehouse-inspection) StderrLine: {'line': b'\n'}
+[127.948903] (autonomous-warehouse-inspection) StderrLine: {'line': b'    ARG_CONFIG_FILE\n'}
+[127.948978] (autonomous-warehouse-inspection) StderrLine: {'line': b'\n'}
+[127.949053] (autonomous-warehouse-inspection) StderrLine: {'line': b'\x1b[0m\n'}
+[127.949724] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Build files have been written to: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection\n'}
+[127.965340] (autonomous-warehouse-inspection) CommandEnded: {'returncode': 0}
+[127.967366] (autonomous-warehouse-inspection) JobProgress: {'identifier': 'autonomous-warehouse-inspection', 'progress': 'build'}
+[127.967692] (autonomous-warehouse-inspection) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection', '--', '-j16', '-l16'], 'cwd': '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mnc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{f9ceaf27-504c-58d7-927c-d1d6a7ac7d3c}'), ('HOME', '/home/mnc'), ('OLDPWD', '/home/mnc/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mnc'), ('NAME', 'Legion5i'), ('WSL_INTEROP', '/run/WSL/7431_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models/:/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2021b/runtime/win64:/mnt/c/Program Files/MATLAB/R2021b/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/PuTTY/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/c/opencv/x64/vc16/bin:/mnt/c/ProgramData/chocolatey/lib/cunit/lib:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ProgramData/chocolatey/lib/bullet/lib:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Program Files/Cppcheck:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/madhu/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2021.3/bin:/mnt/c/Users/madhu/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/xmllint/bin:/snap/bin'), ('WT_SESSION', '2fe46ffa-74fc-43d2-9630-000053f758e2'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION::WT_PROFILE_ID'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[128.009518] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/aruco_detect.dir/src/beacon.o\x1b[0m\n'}
+[128.009821] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.o\x1b[0m\n'}
+[128.009940] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/inspection.dir/src/botInspector.o\x1b[0m\n'}
+[128.010729] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.o\x1b[0m\n'}
+[128.010896] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/inspection.dir/src/main.o\x1b[0m\n'}
+[128.023173] (-) TimerEvent: {}
+[128.124263] (-) TimerEvent: {}
+[128.224976] (-) TimerEvent: {}
+[128.325831] (-) TimerEvent: {}
+[128.426443] (-) TimerEvent: {}
+[128.526947] (-) TimerEvent: {}
+[128.627367] (-) TimerEvent: {}
+[128.728099] (-) TimerEvent: {}
+[128.828882] (-) TimerEvent: {}
+[128.929421] (-) TimerEvent: {}
+[129.029840] (-) TimerEvent: {}
+[129.109884] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[129.130098] (-) TimerEvent: {}
+[129.145958] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 46%] Built target gtest_main\n'}
+[129.230259] (-) TimerEvent: {}
+[129.330876] (-) TimerEvent: {}
+[129.431467] (-) TimerEvent: {}
+[129.532354] (-) TimerEvent: {}
+[129.634085] (-) TimerEvent: {}
+[129.734588] (-) TimerEvent: {}
+[129.835246] (-) TimerEvent: {}
+[129.935823] (-) TimerEvent: {}
+[130.036769] (-) TimerEvent: {}
+[130.137351] (-) TimerEvent: {}
+[130.237877] (-) TimerEvent: {}
+[130.339163] (-) TimerEvent: {}
+[130.440301] (-) TimerEvent: {}
+[130.541130] (-) TimerEvent: {}
+[130.642782] (-) TimerEvent: {}
+[130.743420] (-) TimerEvent: {}
+[130.844436] (-) TimerEvent: {}
+[130.945057] (-) TimerEvent: {}
+[131.046260] (-) TimerEvent: {}
+[131.146849] (-) TimerEvent: {}
+[131.247305] (-) TimerEvent: {}
+[131.347838] (-) TimerEvent: {}
+[131.448488] (-) TimerEvent: {}
+[131.549274] (-) TimerEvent: {}
+[131.649714] (-) TimerEvent: {}
+[131.750233] (-) TimerEvent: {}
+[131.850924] (-) TimerEvent: {}
+[131.951451] (-) TimerEvent: {}
+[132.052109] (-) TimerEvent: {}
+[132.153475] (-) TimerEvent: {}
+[132.254140] (-) TimerEvent: {}
+[132.354872] (-) TimerEvent: {}
+[132.455664] (-) TimerEvent: {}
+[132.556573] (-) TimerEvent: {}
+[132.657298] (-) TimerEvent: {}
+[132.757997] (-) TimerEvent: {}
+[132.858879] (-) TimerEvent: {}
+[132.960212] (-) TimerEvent: {}
+[133.060736] (-) TimerEvent: {}
+[133.161355] (-) TimerEvent: {}
+[133.262312] (-) TimerEvent: {}
+[133.273168] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[133.344583] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 53%] Built target gtest\n'}
+[133.360694] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/autonomous-warehouse-inspection_test.dir/test/main.o\x1b[0m\n'}
+[133.361059] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/autonomous-warehouse-inspection_test.dir/test/botInspectorTest.o\x1b[0m\n'}
+[133.361216] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/autonomous-warehouse-inspection_test.dir/test/test.o\x1b[0m\n'}
+[133.362255] (-) TimerEvent: {}
+[133.462829] (-) TimerEvent: {}
+[133.563669] (-) TimerEvent: {}
+[133.664374] (-) TimerEvent: {}
+[133.764944] (-) TimerEvent: {}
+[133.865401] (-) TimerEvent: {}
+[133.965964] (-) TimerEvent: {}
+[134.066789] (-) TimerEvent: {}
+[134.167464] (-) TimerEvent: {}
+[134.267910] (-) TimerEvent: {}
+[134.368470] (-) TimerEvent: {}
+[134.469102] (-) TimerEvent: {}
+[134.569546] (-) TimerEvent: {}
+[134.670049] (-) TimerEvent: {}
+[134.770876] (-) TimerEvent: {}
+[134.871728] (-) TimerEvent: {}
+[134.972477] (-) TimerEvent: {}
+[135.072910] (-) TimerEvent: {}
+[135.173371] (-) TimerEvent: {}
+[135.273834] (-) TimerEvent: {}
+[135.374249] (-) TimerEvent: {}
+[135.474727] (-) TimerEvent: {}
+[135.575436] (-) TimerEvent: {}
+[135.675881] (-) TimerEvent: {}
+[135.776361] (-) TimerEvent: {}
+[135.876873] (-) TimerEvent: {}
+[135.977397] (-) TimerEvent: {}
+[136.077972] (-) TimerEvent: {}
+[136.178433] (-) TimerEvent: {}
+[136.279026] (-) TimerEvent: {}
+[136.379516] (-) TimerEvent: {}
+[136.479971] (-) TimerEvent: {}
+[136.580470] (-) TimerEvent: {}
+[136.681124] (-) TimerEvent: {}
+[136.781731] (-) TimerEvent: {}
+[136.882291] (-) TimerEvent: {}
+[136.982912] (-) TimerEvent: {}
+[137.083639] (-) TimerEvent: {}
+[137.184372] (-) TimerEvent: {}
+[137.285024] (-) TimerEvent: {}
+[137.386159] (-) TimerEvent: {}
+[137.487363] (-) TimerEvent: {}
+[137.588284] (-) TimerEvent: {}
+[137.689131] (-) TimerEvent: {}
+[137.789825] (-) TimerEvent: {}
+[137.890727] (-) TimerEvent: {}
+[137.991931] (-) TimerEvent: {}
+[138.092795] (-) TimerEvent: {}
+[138.194345] (-) TimerEvent: {}
+[138.295378] (-) TimerEvent: {}
+[138.396379] (-) TimerEvent: {}
+[138.496896] (-) TimerEvent: {}
+[138.597960] (-) TimerEvent: {}
+[138.698773] (-) TimerEvent: {}
+[138.799626] (-) TimerEvent: {}
+[138.901021] (-) TimerEvent: {}
+[139.001707] (-) TimerEvent: {}
+[139.102331] (-) TimerEvent: {}
+[139.203135] (-) TimerEvent: {}
+[139.303572] (-) TimerEvent: {}
+[139.404085] (-) TimerEvent: {}
+[139.504863] (-) TimerEvent: {}
+[139.606054] (-) TimerEvent: {}
+[139.706572] (-) TimerEvent: {}
+[139.807078] (-) TimerEvent: {}
+[139.907540] (-) TimerEvent: {}
+[140.008117] (-) TimerEvent: {}
+[140.108636] (-) TimerEvent: {}
+[140.209172] (-) TimerEvent: {}
+[140.309631] (-) TimerEvent: {}
+[140.410204] (-) TimerEvent: {}
+[140.510669] (-) TimerEvent: {}
+[140.611587] (-) TimerEvent: {}
+[140.712392] (-) TimerEvent: {}
+[140.790451] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX executable autonomous-warehouse-inspection_test\x1b[0m\n'}
+[140.812541] (-) TimerEvent: {}
+[140.913036] (-) TimerEvent: {}
+[141.013473] (-) TimerEvent: {}
+[141.113964] (-) TimerEvent: {}
+[141.214557] (-) TimerEvent: {}
+[141.314986] (-) TimerEvent: {}
+[141.415409] (-) TimerEvent: {}
+[141.444444] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 84%] Built target autonomous-warehouse-inspection_test\n'}
+[141.515624] (-) TimerEvent: {}
+[141.616235] (-) TimerEvent: {}
+[141.716621] (-) TimerEvent: {}
+[141.817232] (-) TimerEvent: {}
+[141.918232] (-) TimerEvent: {}
+[142.019095] (-) TimerEvent: {}
+[142.119644] (-) TimerEvent: {}
+[142.220252] (-) TimerEvent: {}
+[142.320846] (-) TimerEvent: {}
+[142.421658] (-) TimerEvent: {}
+[142.522528] (-) TimerEvent: {}
+[142.623126] (-) TimerEvent: {}
+[142.723645] (-) TimerEvent: {}
+[142.824565] (-) TimerEvent: {}
+[142.925578] (-) TimerEvent: {}
+[143.026424] (-) TimerEvent: {}
+[143.127287] (-) TimerEvent: {}
+[143.227756] (-) TimerEvent: {}
+[143.328223] (-) TimerEvent: {}
+[143.428670] (-) TimerEvent: {}
+[143.529211] (-) TimerEvent: {}
+[143.629707] (-) TimerEvent: {}
+[143.716805] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable aruco_detect\x1b[0m\n'}
+[143.729875] (-) TimerEvent: {}
+[143.830364] (-) TimerEvent: {}
+[143.930925] (-) TimerEvent: {}
+[144.031435] (-) TimerEvent: {}
+[144.132002] (-) TimerEvent: {}
+[144.232427] (-) TimerEvent: {}
+[144.332861] (-) TimerEvent: {}
+[144.433259] (-) TimerEvent: {}
+[144.534109] (-) TimerEvent: {}
+[144.557639] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[ 92%] Built target aruco_detect\n'}
+[144.634279] (-) TimerEvent: {}
+[144.734846] (-) TimerEvent: {}
+[144.835281] (-) TimerEvent: {}
+[144.844673] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable inspection\x1b[0m\n'}
+[144.935431] (-) TimerEvent: {}
+[145.035981] (-) TimerEvent: {}
+[145.137026] (-) TimerEvent: {}
+[145.238489] (-) TimerEvent: {}
+[145.339130] (-) TimerEvent: {}
+[145.439610] (-) TimerEvent: {}
+[145.540118] (-) TimerEvent: {}
+[145.640687] (-) TimerEvent: {}
+[145.741360] (-) TimerEvent: {}
+[145.744855] (autonomous-warehouse-inspection) StdoutLine: {'line': b'[100%] Built target inspection\n'}
+[145.756253] (autonomous-warehouse-inspection) CommandEnded: {'returncode': 0}
+[145.787575] (autonomous-warehouse-inspection) JobProgress: {'identifier': 'autonomous-warehouse-inspection', 'progress': 'install'}
+[145.797662] (autonomous-warehouse-inspection) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection'], 'cwd': '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mnc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{f9ceaf27-504c-58d7-927c-d1d6a7ac7d3c}'), ('HOME', '/home/mnc'), ('OLDPWD', '/home/mnc/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mnc'), ('NAME', 'Legion5i'), ('WSL_INTEROP', '/run/WSL/7431_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models/:/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2021b/runtime/win64:/mnt/c/Program Files/MATLAB/R2021b/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/PuTTY/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/c/opencv/x64/vc16/bin:/mnt/c/ProgramData/chocolatey/lib/cunit/lib:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ProgramData/chocolatey/lib/bullet/lib:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Program Files/Cppcheck:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/madhu/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2021.3/bin:/mnt/c/Users/madhu/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/xmllint/bin:/snap/bin'), ('WT_SESSION', '2fe46ffa-74fc-43d2-9630-000053f758e2'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/build/autonomous-warehouse-inspection'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION::WT_PROFILE_ID'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[145.804342] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[145.805386] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/lib/autonomous-warehouse-inspection/inspection\n'}
+[145.827042] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Set runtime path of "/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/lib/autonomous-warehouse-inspection/inspection" to ""\n'}
+[145.827346] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/lib/autonomous-warehouse-inspection/aruco_detect\n'}
+[145.840773] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Set runtime path of "/home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/lib/autonomous-warehouse-inspection/aruco_detect" to ""\n'}
+[145.841063] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/launch\n'}
+[145.841434] (-) TimerEvent: {}
+[145.841640] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/launch/mainLaunch.launch.py\n'}
+[145.841871] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/launch/aruco_launch.py\n'}
+[145.842584] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/worlds\n'}
+[145.842887] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/worlds/warehouse_layout_1\n'}
+[145.843388] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/worlds/warehouse_mini.world\n'}
+[145.843847] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/worlds/warehouse_layout_1:Zone.Identifier\n'}
+[145.844161] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/worlds/no_roof_small_warehouse.world\n'}
+[145.844317] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/maps\n'}
+[145.844560] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/maps/map_mini.pgm\n'}
+[145.845424] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/maps/map_mini.yaml\n'}
+[145.846003] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/ament_index/resource_index/package_run_dependencies/autonomous-warehouse-inspection\n'}
+[145.846276] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/ament_index/resource_index/parent_prefix_path/autonomous-warehouse-inspection\n'}
+[145.846598] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/environment/ament_prefix_path.sh\n'}
+[145.846743] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/environment/ament_prefix_path.dsv\n'}
+[145.846899] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/environment/path.sh\n'}
+[145.847142] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/environment/path.dsv\n'}
+[145.847189] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/local_setup.bash\n'}
+[145.847336] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/local_setup.sh\n'}
+[145.847450] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/local_setup.zsh\n'}
+[145.847566] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/local_setup.dsv\n'}
+[145.847697] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/package.dsv\n'}
+[145.847883] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/ament_index/resource_index/packages/autonomous-warehouse-inspection\n'}
+[145.848239] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[145.848461] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/cmake/autonomous-warehouse-inspectionConfig.cmake\n'}
+[145.848670] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/cmake/autonomous-warehouse-inspectionConfig-version.cmake\n'}
+[145.848750] (autonomous-warehouse-inspection) StdoutLine: {'line': b'-- Installing: /home/mnc/ros2_ws/src/autonomous-warehouse-inspection/install/autonomous-warehouse-inspection/share/autonomous-warehouse-inspection/package.xml\n'}
+[145.850699] (autonomous-warehouse-inspection) CommandEnded: {'returncode': 0}
+[145.904017] (autonomous-warehouse-inspection) JobEnded: {'identifier': 'autonomous-warehouse-inspection', 'rc': 0}
+[145.905360] (-) EventReactorShutdown: {}

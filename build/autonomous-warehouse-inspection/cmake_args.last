@@ -1,0 +1,1 @@
+['-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_CXX_FLAGS=--coverage', '-DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON', '-DARG_CONFIG_FILE=uncrustify_google_cpp_allman.cfg']
