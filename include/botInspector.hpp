@@ -64,8 +64,8 @@ class BotInspector : public rclcpp::Node {
          */
         void resumeInspectionCallback(const ODOMETRY::SharedPtr odom_msg_r);
 
-        float goal_x = 0.0;
-        float goal_y = -1.5;
+        float goal_x = 3.0;
+        float goal_y = 3.0;
 
         BOT_ROTATE bot_check_;
         std::shared_ptr<rclcpp::Node> bot_rotate_node = rclcpp::Node::make_shared("bot_rotate_node");
