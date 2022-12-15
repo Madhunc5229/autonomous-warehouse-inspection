@@ -24,11 +24,11 @@ find_package(nav_msgs REQUIRED)
 # include_directories(include/test_project)
 #Add Executables
 add_executable(inspection src/main.cpp src/botInspector.cpp)
-ament_target_dependencies(inspection rclcpp rclcpp_action std_msgs geometry_msgs sensor_msgs OpenCV nav_msgs)
+ament_target_dependencies(inspection rclcpp rclcpp_action std_msgs geometry_msgs sensor_msgs nav_msgs)
 install(TARGETS inspection DESTINATION lib/${PROJECT_NAME})
 
 add_executable(aruco_detect src/beacon.cpp)
-ament_target_dependencies(aruco_detect rclcpp rclcpp_action std_msgs geometry_msgs sensor_msgs OpenCV nav_msgs)
+ament_target_dependencies(aruco_detect rclcpp rclcpp_action std_msgs geometry_msgs sensor_msgs nav_msgs)
 install(TARGETS aruco_detect DESTINATION lib/${PROJECT_NAME})
 
 
