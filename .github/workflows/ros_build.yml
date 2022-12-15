@@ -92,14 +92,24 @@ jobs:
           source install/setup.bash
           ros2 run autonomous-warehouse-inspection generate_coverage_report.bash
       
+      # Upload coverage result to Coverage.io 
+      - name: Upload result to Coveralls.io
+        uses: coverallsapp/github-action@1.1.3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: ${{github.workspace}}/install/autonomous-warehouse-inspection/lib/autonomous-warehouse-inspection/coverage_cleaned.info
+
+
+
       # Upload coverage result to CodeCov
       - name: Upload coverage result to CodeCov
         uses: codecov/codecov-action@v3
         with:
-          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          token: ${{ secrets.CODECOV_TOKEN }}
           files: ${{github.workspace}}/install/autonomous-warehouse-inspection/lib/autonomous-warehouse-inspection/coverage_cleaned.info
           # flags: unittests # optional
           # directory: ${{github.workspace}}/install/
           # name: codecov-umbrella # optional
           fail_ci_if_error: true # optional (default = false)
           verbose: true # optional (default = false)      
+# token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
