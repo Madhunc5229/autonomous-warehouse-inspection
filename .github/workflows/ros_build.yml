@@ -72,7 +72,8 @@ jobs:
           colcon test --packages-select autonomous-warehouse-inspection
           cat log/latest_test/autonomous-warehouse-inspection/stdout_stderr.log
           find build/autonomous-warehouse-inspection/ | grep -E 'gcda' # catch error -- expect to see .gcda files
-          colcon test-result --test-result-base build/autonomous-warehouse-inspection/ # catch error
+          
+          colcon test --event-handlers console_direct+ --packages-select pub_sub
 
       # Generate code coverage test report
       - name: Generate test coverage report
