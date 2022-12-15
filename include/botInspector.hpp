@@ -41,6 +41,8 @@ class BotInspector : public rclcpp::Node {
          * 
          */
         void rotateInspector();
+        
+        void setGoal(float x, float y);
 
 
     private:
@@ -50,6 +52,8 @@ class BotInspector : public rclcpp::Node {
         PUB pose_publisher_;
         PUB_TWIST twist_publisher_;
         TIMER timer_;
+        float goal_x_;
+        float goal_y_;
         bool pose_flag = false;
         /**
          * @brief This is the subscriber callback function of the moveToLocation controller.
@@ -63,9 +67,9 @@ class BotInspector : public rclcpp::Node {
          * @param odom_msg_r 
          */
         void resumeInspectionCallback(const ODOMETRY::SharedPtr odom_msg_r);
-
-        float goal_x = 3.0;
-        float goal_y = 3.0;
+        
+        
+        
 
         BOT_ROTATE bot_check_;
         std::shared_ptr<rclcpp::Node> bot_rotate_node = rclcpp::Node::make_shared("bot_rotate_node");
