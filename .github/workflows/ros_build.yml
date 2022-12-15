@@ -101,15 +101,14 @@ jobs:
 
 
 
-      # Upload coverage result to CodeCov
-      - name: Upload coverage result to CodeCov
-        uses: codecov/codecov-action@v3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: ${{github.workspace}}/install/autonomous-warehouse-inspection/lib/autonomous-warehouse-inspection/coverage_cleaned.info
-          # flags: unittests # optional
-          # directory: ${{github.workspace}}/install/
-          # name: codecov-umbrella # optional
-          fail_ci_if_error: true # optional (default = false)
-          verbose: true # optional (default = false)      
-# token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+      # # Upload coverage result to CodeCov
+      # - name: Upload coverage result to CodeCov
+      #   uses: codecov/codecov-action@v3
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
+      #     files: ${{github.workspace}}/install/autonomous-warehouse-inspection/lib/autonomous-warehouse-inspection/coverage_cleaned.info
+      #     # flags: unittests # optional
+      #     # directory: ${{github.workspace}}/install/
+      #     # name: codecov-umbrella # optional
+      #     fail_ci_if_error: true # optional (default = false)
+      #     verbose: true # optional (default = false)      
