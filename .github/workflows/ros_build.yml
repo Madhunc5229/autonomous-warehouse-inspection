@@ -60,31 +60,31 @@ jobs:
       - name: Configure CMake flags and build exectables
         run: |
           source /opt/ros/humble/setup.bash
-          colcon build --cmake-args -DCOVERAGE=1 --packages-select cpp_pubsub
-          cat log/latest_build/cpp_pubsub/stdout_stderr.log
-          find build/cpp_pubsub/ | grep -E 'gcno' # catch error -- exepct to see .gcno files
+          colcon build --cmake-args -DCOVERAGE=1 --packages-select autonomous-warehouse-inspection
+          cat log/latest_build/autonomous-warehouse-inspection/stdout_stderr.log
+          find build/autonomous-warehouse-inspection/ | grep -E 'gcno' # catch error -- exepct to see .gcno files
       
       # Run unit test and also check c++ code (and others) for style and static coding errors
       - name: Run unit test and check code error
         run: |
           source /opt/ros/humble/setup.bash
-          colcon test --packages-select cpp_pubsub
-          cat log/latest_test/cpp_pubsub/stdout_stderr.log
-          find build/cpp_pubsub/ | grep -E 'gcda' # catch error -- expect to see .gcda files
-          colcon test-result --test-result-base build/cpp_pubsub/ # catch error
+          colcon test --packages-select autonomous-warehouse-inspection
+          cat log/latest_test/autonomous-warehouse-inspection/stdout_stderr.log
+          find build/autonomous-warehouse-inspection/ | grep -E 'gcda' # catch error -- expect to see .gcda files
+          colcon test-result --test-result-base build/autonomous-warehouse-inspection/ # catch error
 
       # Generate code coverage test report
       - name: Generate test coverage report
         run: |
           source install/setup.bash
-          ros2 run cpp_pubsub generate_coverage_report.bash
+          ros2 run autonomous-warehouse-inspection generate_coverage_report.bash
       
       # Upload coverage result to CodeCov
       - name: Upload coverage result to CodeCov
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-          files: ${{github.workspace}}/install/cpp_pubsub/lib/cpp_pubsub/coverage_cleaned.info
+          files: ${{github.workspace}}/install/autonomous-warehouse-inspection/lib/autonomous-warehouse-inspection/coverage_cleaned.info
           # flags: unittests # optional
           # directory: ${{github.workspace}}/install/
           # name: codecov-umbrella # optional
