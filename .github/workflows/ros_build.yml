@@ -60,12 +60,10 @@ jobs:
         # export TURTLEBOT3_MODEL=waffle
         # export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:`ros2 pkg prefix turtlebot3_gazebo/share/turtlebot3_gazebo/models/
         # export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:${{github.workspace}}/src/autonomous-warehouse-inspection/models
-
       - name: ROS Dependencies
         run: 
           sudo apt install ros-dev-tools
           sudo apt-get install python-pip
-        # sudo pip install -U rosdep
           sudo rosdep init
           rosdep init
           rosdep install --from-paths autonomous-warehouse-inspection/src -y --ignore-src 
