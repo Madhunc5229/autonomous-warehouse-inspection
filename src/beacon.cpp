@@ -11,7 +11,7 @@
  *
  */
 
-#include "../include/beacon.h"
+#include "../include/beacon.hpp"
 
 Beacon::Beacon() : Node("beacon") {
   auto beacon_ = this->create_subscription<ARUCO_TYPE>(

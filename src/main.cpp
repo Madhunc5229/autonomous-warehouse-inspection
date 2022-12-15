@@ -10,8 +10,8 @@
  * @copyright Copyright (c) 2022
  *
  */
-#include "../include/beacon.h"
-#include "../include/botInspector.h"
+#include "../include/beacon.hpp"
+#include "../include/botInspector.hpp"
 
 int main(int argc, char* argv[]) {
   rclcpp::init(argc, argv);
