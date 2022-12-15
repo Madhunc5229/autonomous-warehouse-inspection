@@ -10,7 +10,7 @@
  * @copyright Copyright (c) 2022
  *
  */
-#include "../include/botInspector.h"
+#include "../include/botInspector.hpp"
 
 BotInspector::BotInspector() : Node("botInspector") {
   current_position.position.x = 0.0;
