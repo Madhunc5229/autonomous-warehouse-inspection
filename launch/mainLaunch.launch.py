@@ -18,17 +18,12 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
     x_pose = LaunchConfiguration('x_pose', default='0.0')
     y_pose = LaunchConfiguration('y_pose', default='0.0')
-    aruco_id = LaunchConfiguration('aruco_id')
+    aruco_launch_dir = get_package_share_directory('autonomous-warehouse-inspection')
     world = os.path.join(
         get_package_share_directory('autonomous-warehouse-inspection'),
         'worlds',
         'warehouse_mini.world'
     )
-
-    # declare_aruco_cmd = DeclareLaunchArgument(
-    #     'aruco_id',
-    #     default_value='0',
-    #     description='ID for the aruco fiducial marker')
 
     start_aruco_detection_node_cmd = Node(
         package='ros2_aruco',
@@ -68,6 +63,9 @@ def generate_launch_description():
                 nav2_tb3 + '/launch/bringup_launch.py']),
                 launch_arguments={'map': map_dir,'params_file':nav2_tb3 + '/params/nav2_params.yaml','use_sim_time': use_sim_time}.items())
 
+    aruco_launch = IncludeLaunchDescription(PythonLaunchDescriptionSource([
+                aruco_launch_dir + '/launch/aruco_launch.py']))
+
     initial_pose_pub = ExecuteProcess(
         cmd=[
             'ros2', 'topic pub -1', '/initialpose', 'geometry_msgs/PoseWithCovarianceStamped', '"{ header: {stamp: {sec: 0, nanosec: 0}, frame_id: "map"}, pose: { pose: {position: {x: 0.0, y: 0.0, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}, } }"' 
@@ -85,6 +83,7 @@ def generate_launch_description():
     ld.add_action(spawn_turtlebot_cmd)
     ld.add_action(nav_launch)
     ld.add_action(initial_pose_pub)
+    ld.add_action(aruco_launch)
     # ld.add_action(declare_aruco_cmd)
     # ld.add_action(start_aruco_detection_node_cmd)
 
