@@ -53,6 +53,13 @@ void BotInspector::setGoal(float x, float y){
   goal_y_ = y;
 }
 
+float BotInspector::getGoalx(){
+  return goal_x_;
+}
+
+float BotInspector::getGoalx(){
+  return goal_y_;
+}
 
 void BotInspector::rotateInspector() {
   twist_publisher_ = this->create_publisher<BOT_ROTATE>("/cmd_vel", 10);

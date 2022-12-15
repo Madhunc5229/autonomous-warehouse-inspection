@@ -44,6 +44,8 @@ class BotInspector : public rclcpp::Node {
         
         void setGoal(float x, float y);
 
+        float getGoalx();
+        float getGoaly();
 
     private:
         geometry_msgs::msg::Pose current_position;
