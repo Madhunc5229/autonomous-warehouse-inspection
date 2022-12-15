@@ -38,17 +38,13 @@ jobs:
       # We want to use GitHub CI checkout version 3 to check out our branch
       - uses: actions/checkout@v3
       
-      - name: Install colcon extensions
-        run:
-          sudo apt-get install git
-          sudo apt update && sudo apt install locales
-          sudo locale-gen en_US en_US.UTF-8
-          sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
-          export LANG=en_US.UTF-8
-          locale
-          sudo apt install software-properties-common
+      # Install some system pacakges
+      - name: Install ROS 2 Humble packages
+        run: |
+          sudo apt update
+          sudo apt install -y software-properties-common
           sudo add-apt-repository universe
-           sudo apt update && sudo apt install -y curl
+          sudo apt update && sudo apt install -y curl
           sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
             -o /usr/share/keyrings/ros-archive-keyring.gpg
           echo "deb [arch=$(dpkg --print-architecture) \
@@ -56,25 +52,20 @@ jobs:
             http://packages.ros.org/ros2/ubuntu \
             $(. /etc/os-release && echo $UBUNTU_CODENAME) main" \
             | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
-
-
-      # Install some system pacakges
-      - name: Install ROS 2 Humble packages
-        run: |
           sudo apt update
           sudo apt install -y ros-humble-ros-base python3-colcon-common-extensions
           sudo apt install -y lcov
-          sudo apt install ros-dev-tools
           sudo apt install ros-humble-gazebo*
           sudo apt install ros-humble-turtlebot3*
-          sudo rosdep init
-          rosdep update
-          rosdep install --from-paths autonomous-warehouse-inspection/src -y --ignore-src
-
-          
         # export TURTLEBOT3_MODEL=waffle
         # export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:`ros2 pkg prefix turtlebot3_gazebo/share/turtlebot3_gazebo/models/
         # export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:${{github.workspace}}/src/autonomous-warehouse-inspection/models
+
+      - name: ROS Dependencies
+        run: 
+          sudo rosdep init
+          rosdep init
+          rosdep install --from-paths autonomous-warehouse-inspection/src -y --ignore-src 
 
       # Build for test coverage
       - name: Configure CMake flags and build exectables
@@ -92,7 +83,7 @@ jobs:
           cat log/latest_test/autonomous-warehouse-inspection/stdout_stderr.log
           find build/autonomous-warehouse-inspection/ | grep -E 'gcda' # catch error -- expect to see .gcda files
           
-          colcon test --event-handlers console_direct+ --packages-select pub_sub
+          colcon test --event-handlers console_direct+ --packages-select autonomous-warehouse-inspection
 
       # Generate code coverage test report
       - name: Generate test coverage report
