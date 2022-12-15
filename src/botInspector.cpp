@@ -45,7 +45,6 @@ void BotInspector::moveToLocation() {
                 "Moving to inspect location");
     rclcpp::sleep_for(500ms);
   }
-  RCLCPP_INFO(this->get_logger(), "Done with");
   pose_flag = false;
 }
 
