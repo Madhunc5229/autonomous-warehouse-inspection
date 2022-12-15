@@ -45,6 +45,23 @@ colcon build --packages-select autonomous-warehouse-inspection
 source install/setup.bash
 ```
 
+## To run the API
+```
+ros2 launch autonomous-warehouse-inspection mainLaunch.launch.py
+```
+
+## To launch the inspection node
+```
+Open a new terminal
+
+. install/setup.bash
+ros2 run autonomous-warehouse-inspection inspection
+```
+## To run the test cases
+```
+colcon test --event-handlers console_direct+ --packages-select autonomous-warehouse-inspection
+```
+
  #### The Quad Chart for the project can be found [here](assets/quad_chart.pdf)
 
  #### The Proposal for the project can be found [here](assets/Proposal.pdf)
