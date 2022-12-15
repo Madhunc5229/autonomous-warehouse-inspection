@@ -31,7 +31,11 @@ add_executable(aruco_detect src/beacon.cpp)
 ament_target_dependencies(aruco_detect rclcpp rclcpp_action std_msgs geometry_msgs sensor_msgs nav_msgs)
 install(TARGETS aruco_detect DESTINATION lib/${PROJECT_NAME})
 
-
+set(TESTFILES
+  test/test.cpp)
+ament_add_gtest(${PROJECT_NAME}_test ${TESTFILES})
+ament_target_dependencies(${PROJECT_NAME}_test rclcpp std_msgs geometry_msgs rclcpp tf2_ros tf2)
+# add_dependencies(${PROJECT_NAME}_test publisher)
 
 #Target folders
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})

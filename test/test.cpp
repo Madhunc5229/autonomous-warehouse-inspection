@@ -25,7 +25,7 @@ class TaskPlanningFixture : public testing::Test {
 
 
 TEST(TaskPlanningFixture, goalPoseCheck) {
-  
+  ASSERT_EQ(true, true);
 }
 
 int main(int argc, char** argv) {
