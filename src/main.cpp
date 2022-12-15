@@ -13,8 +13,7 @@
 #include "../include/beacon.hpp"
 #include "../include/botInspector.hpp"
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
   rclcpp::init(argc, argv);
   BotInspector inspector;
 

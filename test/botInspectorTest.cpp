@@ -1,3 +1,15 @@
+/**
+ * @file botInspectorTest.cpp
+ * @author Madhu Narra Chittibabu (mnarrach@umd.edu)
+ * @author Koundinya Vinnakota (vkd@umd.edu)
+ * @author Sharmitha Ganeshan (mnarrach@umd.edu)
+ * @brief This is the cpp file for test cases of bot inspector
+ * @version 0.1
+ * @date 2022-12-14
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
 #include <gtest/gtest.h>
 #include <stdlib.h>
 #include "rclcpp/rclcpp.hpp"

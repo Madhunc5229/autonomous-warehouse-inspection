@@ -1,3 +1,15 @@
+/**
+ * @file beacon.cpp
+ * @author Madhu Narra Chittibabu (mnarrach@umd.edu)
+ * @author Koundinya Vinnakota (vkd@umd.edu)
+ * @author Sharmitha Ganeshan (mnarrach@umd.edu)
+ * @brief Testting the cpp files.
+ * @version 0.1
+ * @date 2022-12-14
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
 #include <gtest/gtest.h>
 #include <stdlib.h>
 
