@@ -2,10 +2,12 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>autonomous-warehouse-inspection</name>
-  <version>0.0.0</version>
+  <version>0.0.1</version>
   <description>TODO: Package description</description>
-  <maintainer email="koundinya.vinnakota@gmail.com">koundinya</maintainer>
-  <license>TODO: License declaration</license>
+  <maintainer email="Koundinya.vinnakota@gmail.com">Koundinya Vinnakota</maintainer>
+  <maintainer email="madhunc117@gmail.com">Madhu Narra Chittibabu</maintainer>
+  <maintainer email="sganeshan@umd.edu">Sharmitha Ganeshan</maintainer>
+  <license>MIT License</license>
   <exec_depend>ros2launch</exec_depend>
   <buildtool_depend>ament_cmake</buildtool_depend>
   <depend>gazebo_ros_pkgs</depend>
