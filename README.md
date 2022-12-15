@@ -1,4 +1,4 @@
-[![Build](https://github.com/Madhunc5229/autonomous-warehouse-inspection/actions/workflows/build_and_coveralls.yml/badge.svg?branch=main)](https://github.com/Madhunc5229/autonomous-warehouse-inspection/actions/workflows/build_and_coveralls.yml)
+[![Build](https://github.com/Madhunc5229/autonomous-warehouse-inspection/actions/workflows/ros_build.yml/badge.svg)](https://github.com/Madhunc5229/autonomous-warehouse-inspection/actions/workflows/ros_build.yml)
 [![Coverage Status](https://coveralls.io/repos/github/Madhunc5229/autonomous-warehouse-inspection/badge.svg?branch=main)](https://coveralls.io/github/Madhunc5229/autonomous-warehouse-inspection?branch=main)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # autonomous-warehouse-inspection  
