@@ -95,10 +95,7 @@ void BotInspector::resumeInspection() {
 }
 
 void BotInspector::inspectionCallback(const ODOMETRY::SharedPtr odom_msg_i) {
-  // RCLCPP_INFO_STREAM(this->get_logger(),
-  // (std::abs(static_cast<int>(odom_msg_i->pose.pose.position.x - goal_x))));
-  // RCLCPP_INFO_STREAM(this->get_logger(),
-  // (std::abs(static_cast<int>(odom_msg_i->pose.pose.position.y - goal_y))));
+
   if ((std::abs(static_cast<int>(odom_msg_i->pose.pose.position.x - goal_x)) <
        0.5) &&
       (std::abs(static_cast<int>(odom_msg_i->pose.pose.position.y - goal_y)) ==

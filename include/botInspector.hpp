@@ -18,19 +18,28 @@ using namespace std::chrono_literals;
 using std::chrono::duration;
 using BOT_POSE = geometry_msgs::msg::PoseStamped;
 using BOT_ROTATE = geometry_msgs::msg::Twist;
-
+/**
+ * @brief This is the botinspector class, controls the pose of the bot
+ * 
+ */
 class BotInspector : public rclcpp::Node {
 
     public:
         BotInspector();
-
-
-        void inspection();
-
+        /**
+         * @brief This function moves the bot Inspector to a defined location with a automatically computed path
+         * 
+         */
         void moveToLocation();
-
+        /**
+         * @brief This function gets the bot inspector back to the station coordinates.
+         * 
+         */
         void resumeInspection();
-
+        /**
+         * @brief This function controls the rotation of the bot after reaching a specific goal pose
+         * 
+         */
         void rotateInspector();
 
 
@@ -42,8 +51,17 @@ class BotInspector : public rclcpp::Node {
         PUB_TWIST twist_publisher_;
         TIMER timer_;
         bool pose_flag = false;
-
+        /**
+         * @brief This is the subscriber callback function of the moveToLocation controller.
+         * 
+         * @param odom_msg_i 
+         */
         void inspectionCallback(const ODOMETRY::SharedPtr odom_msg_i);
+        /**
+         * @brief This is the subscriber callback for the resumeInspection function which returns the bot to the station location.
+         * 
+         * @param odom_msg_r 
+         */
         void resumeInspectionCallback(const ODOMETRY::SharedPtr odom_msg_r);
 
         float goal_x = 0.0;

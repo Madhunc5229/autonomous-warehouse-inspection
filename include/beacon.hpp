@@ -26,6 +26,11 @@ class Beacon : public rclcpp::Node{
         Beacon();
 
     private:
+        /**
+         * @brief This the aruco call back function
+         * 
+         * @param aruco_msg 
+         */
         void arucoCallback(const ARUCO_TYPE::SharedPtr aruco_msg);
         
 
