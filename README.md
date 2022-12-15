@@ -51,9 +51,8 @@ ros2 launch autonomous-warehouse-inspection mainLaunch.launch.py
 ```
 
 ## To launch the inspection node
-```
 Open a new terminal
-
+```
 . install/setup.bash
 ros2 run autonomous-warehouse-inspection inspection
 ```
