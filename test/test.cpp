@@ -27,12 +27,3 @@ class TaskPlanningFixture : public testing::Test {
 TEST(TaskPlanningFixture, goalPoseCheck) {
   ASSERT_EQ(true, true);
 }
-
-int main(int argc, char** argv) {
-  rclcpp::init(argc, argv);
-  ::testing::InitGoogleTest(&argc, argv);
-  int result = RUN_ALL_TESTS();
-  rclcpp::shutdown();
-  std::cout << "DONE SHUTTING DOWN ROS" << std::endl;
-  return result;
-}
