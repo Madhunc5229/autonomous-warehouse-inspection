@@ -56,6 +56,9 @@ jobs:
           sudo apt install -y ros-humble-ros-base python3-colcon-common-extensions
           sudo apt install -y lcov
           sudo apt install ros-humble-gazebo*
+          export TURTLEBOT3_MODEL=waffle
+          export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:`ros2 pkg prefix turtlebot3_gazebo/share/turtlebot3_gazebo/models/
+          export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:${{github.workspace}}/src/autonomous-warehouse-inspection/models
 
       # Build for test coverage
       - name: Configure CMake flags and build exectables
