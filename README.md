@@ -47,6 +47,8 @@ source install/setup.bash
 
 ## To run the API
 ```
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/{system_name}/ros2_ws/src/autonomous-warehouse-inspection/models
+
 ros2 launch autonomous-warehouse-inspection mainLaunch.launch.py
 ```
 
@@ -59,6 +61,11 @@ ros2 run autonomous-warehouse-inspection inspection
 ## To run the test cases
 ```
 colcon test --event-handlers console_direct+ --packages-select autonomous-warehouse-inspection
+```
+
+## To export models to gazebo
+```
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/{system_name}/ros2_ws/src/autonomous-warehouse-inspection/models
 ```
 
  #### The Quad Chart for the project can be found [here](assets/quad_chart.pdf)
