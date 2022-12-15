@@ -42,8 +42,7 @@ void BotInspector::moveToLocation() {
     rclcpp::spin_some(odom_node);
     pose_publisher_->publish(goal_pose_);
     RCLCPP_INFO(this->get_logger(),
-                "Publishing goal location coordinates and Pose Flag : %d",
-                pose_flag);
+                "Moving to inspect location");
     rclcpp::sleep_for(500ms);
   }
   RCLCPP_INFO(this->get_logger(), "Done with");
@@ -66,7 +65,7 @@ void BotInspector::rotateInspector() {
   while (count) {
     rclcpp::spin_some(bot_rotate_node);
     twist_publisher_->publish(bot_check_);
-    RCLCPP_INFO(this->get_logger(), "Publishing twist message to rotate");
+    RCLCPP_INFO(this->get_logger(), "Looking around..");
     count--;
     rclcpp::sleep_for(500ms);
   }
@@ -98,7 +97,7 @@ void BotInspector::resumeInspection() {
     rclcpp::spin_some(odom_node_1);
     pose_publisher_->publish(goal_pose_1);
     RCLCPP_INFO(this->get_logger(),
-                "Publishing station coordinates and Pose Flag : %d", pose_flag);
+                "Going back to base station.");
     rclcpp::sleep_for(500ms);
   }
 }
@@ -110,8 +109,7 @@ void BotInspector::inspectionCallback(const ODOMETRY::SharedPtr odom_msg_i) {
        0)) {
     pose_flag = true;
     RCLCPP_INFO(this->get_logger(),
-                "Inspector reached goal position and Pose Flag : %d",
-                pose_flag);
+                "Now, Inspecting the location!");
   }
 }
 
@@ -122,6 +120,6 @@ void BotInspector::resumeInspectionCallback(
     pose_flag = true;
 
     RCLCPP_INFO(this->get_logger(),
-                "Inspector reached station and Pose Flag : %d", pose_flag);
+                "Reached the base station. Inspection finished!");
   }
 }
