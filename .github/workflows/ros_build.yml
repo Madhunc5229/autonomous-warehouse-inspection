@@ -63,6 +63,9 @@ jobs:
 
       - name: ROS Dependencies
         run: 
+          sudo apt install ros-dev-tools
+          sudo apt-get install python-pip
+          sudo pip install -U rosdep
           sudo rosdep init
           rosdep init
           rosdep install --from-paths autonomous-warehouse-inspection/src -y --ignore-src 
