@@ -29,7 +29,7 @@ install(TARGETS inspection DESTINATION lib/${PROJECT_NAME})
 
 add_executable(aruco_detect src/beacon.cpp)
 ament_target_dependencies(aruco_detect rclcpp rclcpp_action std_msgs geometry_msgs sensor_msgs OpenCV nav_msgs)
-install(TARGETS inspection DESTINATION lib/${PROJECT_NAME})
+install(TARGETS aruco_detect DESTINATION lib/${PROJECT_NAME})
 
 
 
