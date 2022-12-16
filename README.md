@@ -69,6 +69,7 @@ git clone https://github.com/Madhunc5229/autonomous-warehouse-inspection.git
 ```
 #### Clone the ros2_aruco package
 ```
+cd ..
 git clone https://github.com/JMU-ROBOTICS-VIVA/ros2_aruco
 ```
 #### Build the ros2_aruco package using colcon
