@@ -19,7 +19,6 @@
 #include <vector>
 #include <chrono>
 
-
 using std::placeholders::_1;
 using PUB = rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr;
 using PUB_TWIST = rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr;
@@ -29,6 +28,7 @@ using namespace std::chrono_literals;
 using std::chrono::duration;
 using BOT_POSE = geometry_msgs::msg::PoseStamped;
 using BOT_ROTATE = geometry_msgs::msg::Twist;
+
 /**
  * @brief This is the botinspector class, controls the pose of the bot
  * 
@@ -53,9 +53,25 @@ class BotInspector : public rclcpp::Node {
          */
         void rotateInspector();
         
+        /**
+         * @brief Set the Goal area ti inspect 
+         * 
+         * @param x 
+         * @param y 
+         */
         void setGoal(float x, float y);
 
+        /**
+         * @brief Get the x cordinate of inspect location
+         * 
+         * @return float 
+         */
         float getGoalx();
+        /**
+         * @brief Get the y cordinate of inspect location
+         * 
+         * @return float 
+         */
         float getGoaly();
 
     private:
@@ -81,9 +97,6 @@ class BotInspector : public rclcpp::Node {
          */
         void resumeInspectionCallback(const ODOMETRY::SharedPtr odom_msg_r);
         
-        
-        
-
         BOT_ROTATE bot_check_;
         std::shared_ptr<rclcpp::Node> bot_rotate_node = rclcpp::Node::make_shared("bot_rotate_node");
 

@@ -31,7 +31,10 @@ using BOT_POSE = geometry_msgs::msg::PoseStamped;
 using ARUCO_TYPE = geometry_msgs::msg::Pose;
 
 
-
+/**
+ * @brief this is a beacon class
+ * 
+ */
 class Beacon : public rclcpp::Node{
     public:
         Beacon();
