@@ -2,7 +2,7 @@
  * @file botInspector.cpp
  * @author Madhu Narra Chittibabu (mnarrach@umd.edu)
  * @author Koundinya Vinnakota (vkd@umd.edu)
- * @author Sharmitha Ganeshan (mnarrach@umd.edu)
+ * @author Sharmitha Ganeshan (sganesan@umd.edu)
  * @brief This file controls the robot's position .
  * @version 0.1
  * @date 2022-12-14
@@ -57,7 +57,7 @@ float BotInspector::getGoalx(){
   return goal_x_;
 }
 
-float BotInspector::getGoalx(){
+float BotInspector::getGoaly(){
   return goal_y_;
 }
 

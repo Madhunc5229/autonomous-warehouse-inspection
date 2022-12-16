@@ -25,7 +25,6 @@ class Beacon : public rclcpp::Node{
     public:
         Beacon();
 
-    private:
         /**
          * @brief This the aruco call back function
          * 
