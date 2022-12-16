@@ -9,7 +9,7 @@
  *
  * @copyright Copyright (c) 2022
  *
- */ 
+ */
 
 #include "../include/beacon.hpp"
 
@@ -19,6 +19,6 @@ Beacon::Beacon() : Node("beacon") {
 }
 
 void Beacon::arucoCallback(const ARUCO_TYPE::SharedPtr aruco_msg) {
-
-  RCLCPP_INFO_STREAM(this->get_logger(), "Detect danger at:"<< aruco_msg->position.x);
+  RCLCPP_INFO_STREAM(this->get_logger(),
+                     "Detect danger at:" << aruco_msg->position.x);
 }

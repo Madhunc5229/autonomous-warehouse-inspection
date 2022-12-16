@@ -4,9 +4,9 @@
  * @brief this is simple ros test fixture with simple test
  * @version 0.1
  * @date 2022-12-15
- * 
+ *
  * @copyright Copyright (c) 2022
- * 
+ *
  */
 #include <gtest/gtest.h>
 #include <stdlib.h>
@@ -14,7 +14,6 @@
 #include <chrono>
 #include <cstdlib>
 #include <rclcpp/rclcpp.hpp>
-
 
 class TaskPlanningFixture : public testing::Test {
  public:
@@ -33,6 +32,4 @@ class TaskPlanningFixture : public testing::Test {
   rclcpp::Node::SharedPtr node_;
 };
 
-TEST(TaskPlanningFixture, goalPoseCheck) {
-  ASSERT_EQ(true, true);
-}
+TEST(TaskPlanningFixture, goalPoseCheck) { ASSERT_EQ(true, true); }

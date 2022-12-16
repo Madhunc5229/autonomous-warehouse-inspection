@@ -16,16 +16,17 @@
 int main(int argc, char *argv[]) {
   rclcpp::init(argc, argv);
   BotInspector inspector;
+
   inspector.setGoal(3.0, 3.0);
   inspector.moveToLocation();
   inspector.rotateInspector();
-  inspector.setGoal(3.0,-3.0);
+  inspector.setGoal(3.0, -3.0);
   inspector.moveToLocation();
   inspector.rotateInspector();
-  inspector.setGoal(-3.0,3.0);
+  inspector.setGoal(-3.0, 3.0);
   inspector.moveToLocation();
   inspector.rotateInspector();
-  
+
   inspector.resumeInspection();
 
   rclcpp::shutdown();

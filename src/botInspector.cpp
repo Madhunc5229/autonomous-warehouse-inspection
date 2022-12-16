@@ -41,25 +41,20 @@ void BotInspector::moveToLocation() {
   while (!pose_flag) {
     rclcpp::spin_some(odom_node);
     pose_publisher_->publish(goal_pose_);
-    RCLCPP_INFO(this->get_logger(),
-                "Moving to inspect location");
+    RCLCPP_INFO(this->get_logger(), "Moving to inspect location");
     rclcpp::sleep_for(500ms);
   }
   pose_flag = false;
 }
 
-void BotInspector::setGoal(float x, float y){
+void BotInspector::setGoal(float x, float y) {
   goal_x_ = x;
   goal_y_ = y;
 }
 
-float BotInspector::getGoalx(){
-  return goal_x_;
-}
+float BotInspector::getGoalx() { return goal_x_; }
 
-float BotInspector::getGoaly(){
-  return goal_y_;
-}
+float BotInspector::getGoaly() { return goal_y_; }
 
 void BotInspector::rotateInspector() {
   twist_publisher_ = this->create_publisher<BOT_ROTATE>("/cmd_vel", 10);
@@ -102,8 +97,7 @@ void BotInspector::resumeInspection() {
   while (!pose_flag) {
     rclcpp::spin_some(odom_node_1);
     pose_publisher_->publish(goal_pose_1);
-    RCLCPP_INFO(this->get_logger(),
-                "Going back to base station.");
+    RCLCPP_INFO(this->get_logger(), "Going back to base station.");
     rclcpp::sleep_for(500ms);
   }
 }
@@ -114,8 +108,7 @@ void BotInspector::inspectionCallback(const ODOMETRY::SharedPtr odom_msg_i) {
       (std::abs(static_cast<int>(odom_msg_i->pose.pose.position.y - goal_y_)) ==
        0)) {
     pose_flag = true;
-    RCLCPP_INFO(this->get_logger(),
-                "Now, Inspecting the location!");
+    RCLCPP_INFO(this->get_logger(), "Now, Inspecting the location!");
   }
 }
 
