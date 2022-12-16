@@ -41,6 +41,7 @@ Our future prospects for the project is to integrate a manipulator on a robot wh
 
 ## Project Presentation
 The presentation for the project can be found [here](https://docs.google.com/presentation/d/1p6L6VesaSL7KmsujBSq3SRse_ftzVAOGOLeo8EFLhIA)
+The recorded presentation of the project can be found [here](https://drive.google.com/file/d/1wIPbF_vwcRFHVRCSSdzREha-MeqwBDvr)
 
 ## Project Design:
 The following UML diagrams shows our system design:  
@@ -50,7 +51,7 @@ The following UML diagrams shows our system design:
 ## Our custom world with aruco markers
 <img src="results/world.jpg" width="500" alt="Alt text" title="">
 
-## Simualtion of the project:  
+## Simulation of the project:  
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/61328094/208013669-9a327e9a-b9d3-499c-b521-3f63ad3a6f93.gif)
 
