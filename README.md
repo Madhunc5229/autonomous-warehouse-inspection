@@ -48,7 +48,7 @@ The following UML diagrams shows our system design:
 <img src="UML/Final/Class Diagram.png" width="500" alt="Alt text" title="">
 
 ## Our custom world with aruco markers
-![world](https://user-images.githubusercontent.com/61328094/208013379-03c9d793-f342-4434-9507-f234254f123d.jpg)  
+<img src="results/world.jpg" width="500" alt="Alt text" title="">
 
 ## Simualtion of the project:  
 
