@@ -39,7 +39,7 @@ ament_target_dependencies(aruco_detect rclcpp rclcpp_action std_msgs geometry_ms
 install(TARGETS aruco_detect DESTINATION lib/${PROJECT_NAME})
 
 set(TESTFILES
-  test/test.cpp test/botInspectorTest.cpp test/main.cpp src/botInspector.cpp test/beaconTest.cpp src/beacon.cpp)
+  test/test.cpp test/botInspectorTest.cpp test/main.cpp src/botInspector.cpp)
 ament_add_gtest(${PROJECT_NAME}_test ${TESTFILES})
 ament_target_dependencies(${PROJECT_NAME}_test rclcpp std_msgs geometry_msgs nav_msgs rclcpp tf2_ros tf2)
 install(TARGETS ${PROJECT_NAME}_test DESTINATION lib/${PROJECT_NAME})
