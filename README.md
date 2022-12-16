@@ -47,6 +47,14 @@ The following UML diagrams shows our system design:
 <img src="UML/Final/Activity Diagram.png" width="500" alt="Alt text" title="">
 <img src="UML/Final/Class Diagram.png" width="500" alt="Alt text" title="">
 
+## Our custom world with aruco markers
+![world](https://user-images.githubusercontent.com/61328094/208013379-03c9d793-f342-4434-9507-f234254f123d.jpg)  
+
+## Simualtion of the project:  
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/61328094/208013669-9a327e9a-b9d3-499c-b521-3f63ad3a6f93.gif)
+
+
 ## Building the package
 
 #### source the ROS2 setup bash.
