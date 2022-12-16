@@ -1,3 +1,14 @@
+/**
+ * @file beacon.hpp
+ * @author Madhu Narra Chittibabu (madhunc117@gmail.com)
+ * @brief This file contains declarations for beacon class
+ * @version 0.1
+ * @date 2022-12-15
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 #pragma once
 #include "rclcpp/rclcpp.hpp"
 #include "geometry_msgs/msg/pose.hpp"
