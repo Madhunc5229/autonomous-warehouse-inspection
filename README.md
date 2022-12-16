@@ -40,7 +40,7 @@ Our future prospects for the project is to integrate a manipulator on a robot wh
 - The Blacklog sheets for the Sprint can be found [here](https://docs.google.com/spreadsheets/d/1X7CdlP6GfEIelaqToiiKs4L1Nf4WaPwW27uZhFS1iec/edit#gid=0)
 
 ## Project Presentation
-The presentation for the project can be found here:
+The presentation for the project can be found [here](https://docs.google.com/presentation/d/1p6L6VesaSL7KmsujBSq3SRse_ftzVAOGOLeo8EFLhIA)
 
 ## Building the package
 
