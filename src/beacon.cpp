@@ -19,12 +19,6 @@ Beacon::Beacon() : Node("beacon") {
 }
 
 void Beacon::arucoCallback(const ARUCO_TYPE::SharedPtr aruco_msg) {
-  RCLCPP_INFO_STREAM(this->get_logger(), aruco_msg);
-}
-
-int main(int argc, char *argv[]) {
-  rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<Beacon>());
-
-  rclcpp::shutdown();
+  RCLCPP_INFO_STREAM(this->get_logger(),
+                     "Detect danger at:" << aruco_msg->position.x);
 }

@@ -1,6 +1,9 @@
+Done processing include/./beacon.hpp
+Done processing include/./botInspector.hpp
 Done processing src/./beacon.cpp
 Done processing src/./botInspector.cpp
-Done processing src/./main.cpp
+Done processing src/./launchBeacon.cpp
+Done processing src/./launchInspector.cpp
 Done processing test/./botInspectorTest.cpp
 Done processing test/./main.cpp
 Done processing test/./test.cpp

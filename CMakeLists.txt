@@ -14,14 +14,10 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
-# find_package(OpenCV REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(gazebo_ros REQUIRED)
 find_package(nav_msgs REQUIRED)
-# find_package(ros2_aruco_interfaces REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
+
 
 # below sets up code coverage and uncrustify config file location
 if(COVERAGE)
@@ -32,21 +28,21 @@ if(COVERAGE)
     CACHE STRING "uncrustify config file")
 endif()
 
-# include_directories(include/test_project)
+include_directories(include/)
 #Add Executables
-add_executable(inspection src/main.cpp src/botInspector.cpp)
+add_executable(inspection src/launchInspector.cpp src/botInspector.cpp)
 ament_target_dependencies(inspection rclcpp rclcpp_action std_msgs geometry_msgs sensor_msgs nav_msgs)
 install(TARGETS inspection DESTINATION lib/${PROJECT_NAME})
 
-add_executable(aruco_detect src/beacon.cpp)
+add_executable(aruco_detect src/beacon.cpp src/launchBeacon.cpp)
 ament_target_dependencies(aruco_detect rclcpp rclcpp_action std_msgs geometry_msgs sensor_msgs nav_msgs)
 install(TARGETS aruco_detect DESTINATION lib/${PROJECT_NAME})
 
 set(TESTFILES
-  test/test.cpp test/botInspectorTest.cpp test/main.cpp)
+  test/test.cpp test/botInspectorTest.cpp test/main.cpp src/botInspector.cpp)
 ament_add_gtest(${PROJECT_NAME}_test ${TESTFILES})
 ament_target_dependencies(${PROJECT_NAME}_test rclcpp std_msgs geometry_msgs nav_msgs rclcpp tf2_ros tf2)
-# add_dependencies(${PROJECT_NAME}_test publisher)
+install(TARGETS ${PROJECT_NAME}_test DESTINATION lib/${PROJECT_NAME})
 
 #Target folders
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})

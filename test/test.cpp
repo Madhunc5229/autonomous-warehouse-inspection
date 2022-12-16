@@ -1,11 +1,9 @@
 /**
- * @file beacon.cpp
- * @author Madhu Narra Chittibabu (mnarrach@umd.edu)
- * @author Koundinya Vinnakota (vkd@umd.edu)
- * @author Sharmitha Ganeshan (mnarrach@umd.edu)
- * @brief Testting the cpp files.
+ * @file test.cpp
+ * @author Madhu Narra Chittibabu (madhunc117@gmail.com)
+ * @brief this is simple ros test fixture with simple test
  * @version 0.1
- * @date 2022-12-14
+ * @date 2022-12-15
  *
  * @copyright Copyright (c) 2022
  *
@@ -16,7 +14,6 @@
 #include <chrono>
 #include <cstdlib>
 #include <rclcpp/rclcpp.hpp>
-
 
 class TaskPlanningFixture : public testing::Test {
  public:
@@ -35,7 +32,4 @@ class TaskPlanningFixture : public testing::Test {
   rclcpp::Node::SharedPtr node_;
 };
 
-
-TEST(TaskPlanningFixture, goalPoseCheck) {
-  ASSERT_EQ(true, true);
-}
+TEST(TaskPlanningFixture, goalPoseCheck) { ASSERT_EQ(true, true); }

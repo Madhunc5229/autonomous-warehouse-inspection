@@ -12,9 +12,11 @@
  */
 #include <gtest/gtest.h>
 #include <stdlib.h>
-#include "rclcpp/rclcpp.hpp"
+
 #include "../include/botInspector.hpp"
+#include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
+
 class TaskInspection : public testing::Test {
  protected:
   rclcpp::Node::SharedPtr node_;
@@ -22,9 +24,19 @@ class TaskInspection : public testing::Test {
 
 TEST_F(TaskInspection, test_for_num_publishers) {
   node_ = rclcpp::Node::make_shared("test_inspection");
-  auto test_pub = node_->create_publisher<std_msgs::msg::String>
-                    ("inspection", 20.0);
+  auto test_pub =
+      node_->create_publisher<std_msgs::msg::String>("inspection", 20.0);
 
   auto num_pub = node_->count_publishers("inspection");
+
   EXPECT_EQ(1, static_cast<int>(num_pub));
+}
+
+TEST_F(TaskInspection, goal_setter_test) {
+  node_ = rclcpp::Node::make_shared("test_goal");
+  BotInspector inspector;
+
+  inspector.setGoal(3.0, 5.0);
+  EXPECT_EQ(inspector.getGoalx(), 3.0);
+  EXPECT_EQ(inspector.getGoaly(), 5.0);
 }
