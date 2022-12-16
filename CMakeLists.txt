@@ -32,21 +32,23 @@ if(COVERAGE)
     CACHE STRING "uncrustify config file")
 endif()
 
+include_directories(include/)
 # include_directories(include/test_project)
 #Add Executables
-add_executable(inspection src/main.cpp src/botInspector.cpp)
+add_executable(inspection src/launchInspector.cpp src/botInspector.cpp)
 ament_target_dependencies(inspection rclcpp rclcpp_action std_msgs geometry_msgs sensor_msgs nav_msgs)
 install(TARGETS inspection DESTINATION lib/${PROJECT_NAME})
 
-add_executable(aruco_detect src/beacon.cpp)
+add_executable(aruco_detect src/beacon.cpp src/launchBeacon.cpp)
 ament_target_dependencies(aruco_detect rclcpp rclcpp_action std_msgs geometry_msgs sensor_msgs nav_msgs)
 install(TARGETS aruco_detect DESTINATION lib/${PROJECT_NAME})
 
 set(TESTFILES
-  test/test.cpp test/botInspectorTest.cpp test/main.cpp)
+  test/test.cpp test/botInspectorTest.cpp test/main.cpp src/botInspector.cpp test/beaconTest.cpp src/beacon.cpp)
 ament_add_gtest(${PROJECT_NAME}_test ${TESTFILES})
 ament_target_dependencies(${PROJECT_NAME}_test rclcpp std_msgs geometry_msgs nav_msgs rclcpp tf2_ros tf2)
-# add_dependencies(${PROJECT_NAME}_test publisher)
+install(TARGETS ${PROJECT_NAME}_test DESTINATION lib/${PROJECT_NAME})
+#add_dependencies(${PROJECT_NAME}_test publisher)
 
 #Target folders
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
