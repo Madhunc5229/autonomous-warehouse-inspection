@@ -35,7 +35,6 @@ class TaskPlanningFixture : public testing::Test {
   rclcpp::Node::SharedPtr node_;
 };
 
-
 TEST(TaskPlanningFixture, goalPoseCheck) {
   ASSERT_EQ(true, true);
 }

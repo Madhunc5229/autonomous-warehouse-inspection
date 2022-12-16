@@ -12,8 +12,10 @@
  */
 #include <gtest/gtest.h>
 #include <rclcpp/rclcpp.hpp>
+#include "../include/botInspector.hpp"
 
 int main(int argc, char** argv) {
+
   rclcpp::init(argc, argv);
   ::testing::InitGoogleTest(&argc, argv);
   int result = RUN_ALL_TESTS();
